@@ -1,0 +1,513 @@
+﻿<Page x:Class="Đồ_án.View.Class"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:Đồ_án.View"
+      xmlns:ViewModel="clr-namespace:Đồ_án.ViewModel"
+      xmlns:VM="clr-namespace:Đồ_án.ViewModel.DashBroad"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="970"
+      Title="Class">
+    <Grid Background="GhostWhite">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <materialDesign:ColorZone  Width="970" Height="90" Mode="Inverted" Padding="16" Background="DarkSlateGray">
+                <DockPanel>
+                    <materialDesign:PopupBox DockPanel.Dock="Right" PlacementMode="BottomAndAlignRightEdges"
+                                         Foreground="White"
+                                         FontSize="20">
+                        <ListBox Background="GhostWhite">
+                            <ListBoxItem Width="150" Height="50">
+                                <Button Command="{Binding ShowLogin}" Content="Logout" Foreground="DarkSlateGray"
+                                    Width="150" Height="50" DataContext="{StaticResource LoginViewModel}">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="\Resources\icons8_customer_30px_1.png"/>
+                                    </Button.Background>
+                                </Button>
+                            </ListBoxItem>
+                            <ListBoxItem Width="150" Height="50">
+                                <Button Command="{Binding ExitCommand, Source={StaticResource ExitViewModel}}" Content="Exit" Foreground="DarkSlateGray"
+                                    Width="150" Height="50">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="\Resources\icons8_close_window_52px.png"/>
+                                    </Button.Background>
+                                </Button>
+                            </ListBoxItem>
+                        </ListBox>
+                    </materialDesign:PopupBox>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="\Resources\icons8_customer_30px_1.png"/>
+                        <TextBlock VerticalAlignment="Center" Margin="16 0 0 0" Text="Detail Information"
+                               FontSize="25"/>
+                    </StackPanel>
+                </DockPanel>
+            </materialDesign:ColorZone>
+
+
+
+            <Border  
+            Padding="20"
+            BorderBrush="Gray"
+            BorderThickness="1"
+            CornerRadius="10"
+            Margin="10,100,10,10">
+                <ScrollViewer Height="537">
+                    <StackPanel>
+                        <TextBlock Padding="10"
+                        Text="Information"
+                        FontSize="18"></TextBlock>
+                        <!--STUDENT-->
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Name">
+                            </TextBlock>
+                            <TextBox Padding="0 10 0 0" Grid.Column="1"
+                                     Text="{Binding DetailStudent.FullName}" Margin="0,0,10,0"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition Width="500"/>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="MSSV">
+                            </TextBlock>
+                            <TextBox Padding="0 10 0 0" Grid.Column="1" Text="{Binding IdStudent, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,34,0"></TextBox>
+                            <TextBlock Grid.Column="2"
+                           
+                            Margin="0,20,0,0"
+                            Text="Default PassWord">
+                            </TextBlock>
+                            <TextBox Padding="0 10 0 0" Grid.Column="3" Text="{Binding DefaultPassWord, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,10,10,0"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition Width="201*"/>
+                                <ColumnDefinition Width="459*"/>
+                                <ColumnDefinition Width="122*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Gmail">
+                            </TextBlock>
+                            <TextBox Padding="0 10 0 0" Grid.Column="1" Margin="0,0,10,0" Text="{Binding Gmail, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="3"></TextBox>
+
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition Width="201*"/>
+                                <ColumnDefinition Width="459*"/>
+                                <ColumnDefinition Width="122*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Gender">
+                            </TextBlock>
+                            <TextBox IsEnabled="False" Padding="0 10 0 0" Grid.Column="1" Margin="0,0,10,0" Text="{Binding DetailStudent.Gender}" Grid.ColumnSpan="3"></TextBox>
+
+                        </Grid>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Date of birth">
+                            </TextBlock>
+                            <TextBox FontSize="12" Grid.Column="1" Margin="0,0,10,0" Padding="0 10 0 0"
+                                         Text="{Binding DetailStudent.DateOfBirth}"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Birth place">
+                            </TextBlock>
+                            <TextBox Padding="0 10 0 0" Grid.Column="1" Margin="0,0,10,0"
+                                     Text="{Binding DetailStudent.BirthPlace}"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Identify Number">
+                            </TextBlock>
+                            <TextBox Text="{Binding DetailStudent.CCCD}" Padding="0 10 0 0" Grid.Column="1" Margin="0,0,10,0"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock 
+                                HorizontalAlignment="Center"
+                                Padding="8 10 10 10"
+                                Text="Place issue ID">
+                                </TextBlock>
+                                <TextBox Grid.Row="1" Width="100" Text="{Binding DetailStudent.PLACE_CCCD}"></TextBox>
+                            </Grid>
+                            <Grid Grid.Column="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock 
+                                HorizontalAlignment="Center"
+                                Padding="8 10 10 10"
+                                Text="Phone number">
+                                </TextBlock>
+                                <TextBox Grid.Row="1" Width="100" Text="{Binding DetailStudent.PhoneNumber}"></TextBox>
+                            </Grid>
+                            <Grid Grid.Column="2">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock 
+                                HorizontalAlignment="Center"
+                                Padding="8 10 10 10"
+                                Text="Ethnic">
+                                </TextBlock>
+                                <TextBox Grid.Row="1" Width="100" Text="{Binding DetailStudent.Ethnic}"></TextBox>
+                            </Grid>
+                        </Grid>
+                        <!--STUDENT-->
+
+                        <TextBlock Padding="10"
+                        Text="Family information"
+                        FontSize="18"></TextBlock>
+                        <!--FATHER-->
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Father's name">
+                            </TextBlock>
+                            <TextBox Text="{Binding Father.FullName}" Padding="0 10 0 0" Grid.Column="1" Margin="0,0,10,0"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Oppcupation">
+                            </TextBlock>
+                            <TextBox Text="{Binding Father.Occupation}" Padding="0 10 0 0" Grid.Column="1" Margin="0,0,10,0"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Date of birth">
+                            </TextBlock>
+                            <TextBox Padding="0 10 0 0" Text="{Binding Father.DateOfBirth}" FontSize="12" Grid.Column="1" Margin="0,0,10,0"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Country">
+                            </TextBlock>
+                            <TextBox Text="{Binding Father.Country}" Padding="0 10 0 0" Grid.Column="1" Margin="0,0,10,0"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Identify Number">
+                            </TextBlock>
+                            <TextBox Text="{Binding Father.CCCD}" Padding="0 10 0 0" Grid.Column="1" Margin="0,0,10,0"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock 
+                                HorizontalAlignment="Center"
+                                Padding="8 10 10 10"
+                                Text="Address">
+                                </TextBlock>
+                                <TextBox Text="{Binding Father.Address}" Grid.Row="1" Width="100" Margin="0,0,10,0"></TextBox>
+                            </Grid>
+                            <Grid Grid.Column="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock 
+                                    HorizontalAlignment="Center"
+                                    Padding="8 10 10 10"
+                                    Text="Phone number">
+                                </TextBlock>
+                                <TextBox Text="{Binding Father.PhoneNumber}" Grid.Row="1" Width="100" Margin="0,0,10,0"></TextBox>
+                            </Grid>
+                            <Grid Grid.Column="2">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock 
+                                    HorizontalAlignment="Center"
+                                    Padding="8 10 10 10"
+                                    Text="Ethnic">
+                                </TextBlock>
+                                <TextBox Text="{Binding Father.Ethnic}" Grid.Row="1" Width="100" Margin="0,0,10,0"></TextBox>
+                            </Grid>
+                        </Grid>
+                        <!--FATHER-->
+                        <!--MOTHER-->
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Mother's name">
+                            </TextBlock>
+                            <TextBox Text="{Binding Mother.NAME}" Padding="0 10 0 0" Grid.Column="1" Margin="0,0,10,0"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Oppcupation">
+                            </TextBlock>
+                            <TextBox Text="{Binding Mother.Occupation}" Padding="0 10 0 0" Grid.Column="1" Margin="0,0,10,0"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Date of birth">
+                            </TextBlock>
+                            <TextBox Padding="0 10 0 0" Text="{Binding Mother.DateOfBirth}" FontSize="12" Grid.Column="1" Margin="0,0,10,0"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            x:Name="CountryName"
+                            Padding="8 10 10 10"
+                            Text="Country">
+                            </TextBlock>
+                            <TextBox Text="{Binding Mother.Country}" Padding="0 10 0 0" Grid.Column="1" Margin="0,0,10,0"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Identify Number">
+                            </TextBlock>
+                            <TextBox Text="{Binding Mother.CCCD}" Padding="0 10 0 0" Grid.Column="1" Margin="0,0,10,0"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock 
+                                HorizontalAlignment="Center"
+                                Padding="8 10 10 10"
+                                Text="Address">
+                                </TextBlock>
+                                <TextBox Text="{Binding Mother.Address}" Grid.Row="1" Width="100" Margin="0,0,10,0"></TextBox>
+                            </Grid>
+                            <Grid Grid.Column="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock 
+                                    HorizontalAlignment="Center"
+                                    Padding="8 10 10 10"
+                                    Text="Phone number">
+                                </TextBlock>
+                                <TextBox Text="{Binding Mother.PhoneNumber}" Grid.Row="1" Width="100"></TextBox>
+                            </Grid>
+                            <Grid Grid.Column="2">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock 
+                                    HorizontalAlignment="Center"
+                                    Padding="8 10 10 10"
+                                    Text="Ethnic">
+                                </TextBlock>
+                                <TextBox Text="{Binding Mother.Ethnic}" Grid.Row="1" Width="100"></TextBox>
+                            </Grid>
+                        </Grid>
+                        <!--MOTHER-->
+                        <!--MORE INFORMATION-->
+                        <TextBlock Padding="10"
+                        Text="More information"
+                        FontSize="18"></TextBlock>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="130"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Secondary school">
+                            </TextBlock>
+                            <TextBox Text="{Binding DetailStudent.SecondarySchool}" Padding="0 10 0 0" Grid.Column="1"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="130"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Health Insurance ID">
+                            </TextBlock>
+                            <TextBox Text="{Binding DetailStudent.HealthInsuranceID}" Padding="0 10 0 0" Grid.Column="1"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="130"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Achievement">
+                            </TextBlock>
+                            <TextBox Text="{Binding DetailStudent.AcademicAchievement}" Padding="0 10 0 0" Grid.Column="1"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock 
+                                HorizontalAlignment="Center"
+                                Padding="8 10 10 10"
+                                Text="FacultyCode">
+                                </TextBlock>
+                                <TextBox Text="{Binding DetailStudent.FacultyCode}" Grid.Row="1" Width="100"></TextBox>
+                            </Grid>
+                            <Grid Grid.Column="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock 
+                                HorizontalAlignment="Center"
+                                Padding="8 10 10 10"
+                                Text="FacultyName">
+                                </TextBlock>
+                                <TextBox Text="{Binding DetailStudent.FacultyName}" Grid.Row="1" Width="100"></TextBox>
+                            </Grid>
+                            <Grid Grid.Column="2">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock 
+                                HorizontalAlignment="Center"
+                                Padding="8 10 10 10"
+                                Text="Majors">
+                                </TextBlock>
+                                <TextBox Text="{Binding DetailStudent.Majors}" Grid.Row="1" Width="100"></TextBox>
+                            </Grid>
+                        </Grid>
+                        <!--MORE INFORMATION-->
+                        <Grid Height="100">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Button Margin="20,0,20,0" 
+                                    Grid.Column="0" 
+                                    Content="Confirm" 
+                                    Command="{Binding AddCommand}">
+
+                            </Button>
+                            <Button Margin="20,0,20,0" Grid.Column="1" Content="Cancel" Background="#FFED6E93" Command="{Binding MainClassCommand}">
+                                <Button.DataContext>
+                                    <ViewModel:MainClassViewModel/>
+                                </Button.DataContext>
+                            </Button>
+                        </Grid>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

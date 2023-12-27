@@ -1,0 +1,104 @@
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Đồ án.csproj.AssemblyReference.cache
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Resources\Xaml\IconsResource.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Resources\Xaml\MaterialDesignResource.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\BindablePasswordBox.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Class\ClassDetail.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Class\ClassListing.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Education\Information.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Education\Schedule.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\NotifycationListing.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Education\Result.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\NotifycationUpdating.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Student\StudentListing.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Student\StudentRegister.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Student\StudentSearching.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Subject\SubjectListing.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Subject\SubjectUpdating.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Teacher\TeacherListing.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Teacher\TeacherSearching.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Teacher\TeacherUpdating.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Education.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\InsertNewNotifycation.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\InsertNewRegisterNotifycation.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\OpenNotifycation.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Student\AddStudent.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Class\Class.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\FogotPassWord.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Home.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Subject\InsertNewSubject.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Teacher\InsertNewTeacher.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Login.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Class\MainClass.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Student\MainStudent.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\MainWindow.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Page1.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Profile.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Setting.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Subject\Subject.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Teacher\Teacher.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\UpdatingNotifycation.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\App.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Đồ án_Content.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Đồ án_MarkupCompile.cache
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Đồ án_MarkupCompile.lref
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Release\Đồ án.exe.config
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Release\Đồ án.exe
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Release\Đồ án.pdb
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Release\MaterialDesignColors.dll
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Release\MaterialDesignColors.pdb
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Release\MaterialDesignThemes.Wpf.dll
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Release\MaterialDesignThemes.Wpf.pdb
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Release\Microsoft.Xaml.Behaviors.dll
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Release\Microsoft.Xaml.Behaviors.pdb
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Release\Newtonsoft.Json.dll
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Release\EntityFramework.dll
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Release\EntityFramework.xml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\App.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\BindablePasswordBox.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Class\ClassDetail.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Class\ClassListing.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Education\Information.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Education\Schedule.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\NotifycationListing.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Education\Result.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\NotifycationUpdating.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Student\StudentListing.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Student\StudentRegister.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Student\StudentSearching.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Subject\SubjectListing.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Subject\SubjectUpdating.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Teacher\TeacherListing.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Teacher\TeacherSearching.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Components\Teacher\TeacherUpdating.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Resources\Xaml\ViewModelResources.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Resources\Xaml\Generic.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Education.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\InsertNewNotifycation.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\InsertNewRegisterNotifycation.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\OpenNotifycation.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Student\AddStudent.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Class\Class.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\FogotPassWord.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Home.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Subject\InsertNewSubject.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Teacher\InsertNewTeacher.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Login.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Class\MainClass.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Student\MainStudent.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\MainWindow.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Page1.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Profile.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Setting.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Subject\Subject.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\Teacher\Teacher.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\View\UpdatingNotifycation.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Đồ án.g.resources
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Đồ_án.Properties.Resources.resources
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Đồ án.csproj.GenerateResource.cache
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Đồ án.csproj.CoreCompileInputs.cache
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Đồ án.csproj.CopyComplete
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Đồ án.exe
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Release\Đồ án.pdb

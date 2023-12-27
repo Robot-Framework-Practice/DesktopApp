@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Đồ_ÁnModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Classes">
+    <Key>
+      <PropertyRef Name="IdClass" />
+    </Key>
+    <Property Name="IdClass" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="NgBD" Type="smalldatetime" />
+    <Property Name="NgKT" Type="smalldatetime" />
+    <Property Name="IdSubject" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DatabaseImageTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="DetailUsers">
+    <Key>
+      <PropertyRef Name="CCCD" />
+    </Key>
+    <Property Name="CCCD" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FullName" Type="varchar(max)" />
+    <Property Name="Gender" Type="bit" />
+    <Property Name="DateOfBirth" Type="varchar" MaxLength="10" />
+    <Property Name="BirthPlace" Type="varchar" MaxLength="20" />
+    <Property Name="PLACE_CCCD" Type="varchar(max)" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="15" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="Ethnic" Type="varchar(max)" />
+    <Property Name="SecondarySchool" Type="varchar(max)" />
+    <Property Name="HealthInsuranceID" Type="varchar" MaxLength="15" />
+    <Property Name="AcademicAchievement" Type="varchar(max)" />
+    <Property Name="FacultyCode" Type="varchar" MaxLength="10" />
+    <Property Name="FacultyName" Type="varchar(max)" />
+    <Property Name="Majors" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Notifycation">
+    <Key>
+      <PropertyRef Name="IdNotify" />
+    </Key>
+    <Property Name="IdNotify" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Content" Type="nvarchar(max)" />
+    <Property Name="DateNotify" Type="datetime" />
+    <Property Name="Header" Type="varchar" MaxLength="50" />
+    <Property Name="SentTime" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="OTP">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Code" Type="nvarchar(max)" />
+    <Property Name="Time" Type="datetime" />
+  </EntityType>
+  <EntityType Name="RegisterClass">
+    <Key>
+      <PropertyRef Name="IdClass" />
+      <PropertyRef Name="IdUser" />
+    </Key>
+    <Property Name="IdClass" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="IdUser" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RegisterNotifycation">
+    <Key>
+      <PropertyRef Name="IdNotify" />
+      <PropertyRef Name="IdUser" />
+    </Key>
+    <Property Name="IdNotify" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="IdUser" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RelationShip">
+    <Key>
+      <PropertyRef Name="DetailUsersCCCD" />
+      <PropertyRef Name="RelativeCCCD" />
+    </Key>
+    <Property Name="DetailUsersCCCD" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RelativeCCCD" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Relative">
+    <Key>
+      <PropertyRef Name="CCCD" />
+    </Key>
+    <Property Name="CCCD" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FullName" Type="varchar(max)" />
+    <Property Name="Gender" Type="bit" />
+    <Property Name="Occupation" Type="varchar(max)" />
+    <Property Name="DateOfBirth" Type="varchar" MaxLength="10" />
+    <Property Name="Country" Type="varchar(max)" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="15" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="Ethnic" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Result">
+    <Key>
+      <PropertyRef Name="IdStudent" />
+      <PropertyRef Name="IdClass" />
+    </Key>
+    <Property Name="IdStudent" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="IdClass" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="QT" Type="float" />
+    <Property Name="GK" Type="float" />
+    <Property Name="TH" Type="float" />
+    <Property Name="CK" Type="float" />
+    <Property Name="DiemTB" Type="float" />
+  </EntityType>
+  <EntityType Name="Subjects">
+    <Key>
+      <PropertyRef Name="IdSubject" />
+    </Key>
+    <Property Name="IdSubject" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NameSubject" Type="varchar(max)" />
+    <Property Name="TinChiLT" Type="int" />
+    <Property Name="TinChiTH" Type="int" />
+    <Property Name="RatioQT" Type="float" />
+    <Property Name="RatioGK" Type="float" />
+    <Property Name="RatioTH" Type="float" />
+    <Property Name="RatioCK" Type="float" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Role" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="IdUser" />
+    </Key>
+    <Property Name="IdUser" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Passwd" Type="varchar" MaxLength="65" />
+    <Property Name="DisplayName" Type="varchar(max)" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="IdOTP" Type="uniqueidentifier" />
+    <Property Name="IdUserRole" Type="uniqueidentifier" />
+    <Property Name="IdAvatar" Type="uniqueidentifier" />
+    <Property Name="CCCD" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Users__CCCD__778AC167">
+    <End Role="DetailUsers" Type="Self.DetailUsers" Multiplicity="1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetailUsers">
+        <PropertyRef Name="CCCD" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="CCCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__IdAvatar__74AE54BC">
+    <End Role="DatabaseImageTable" Type="Self.DatabaseImageTable" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DatabaseImageTable">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="IdAvatar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__IdOTP__76969D2E">
+    <End Role="OTP" Type="Self.OTP" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OTP">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="IdOTP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__IdUserRol__75A278F5">
+    <End Role="UserRole" Type="Self.UserRole" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRole">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="IdUserRole" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Classes_IdSubject">
+    <End Role="Subjects" Type="Self.Subjects" Multiplicity="1" />
+    <End Role="Classes" Type="Self.Classes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subjects">
+        <PropertyRef Name="IdSubject" />
+      </Principal>
+      <Dependent Role="Classes">
+        <PropertyRef Name="IdSubject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RegisterClass_IdClass">
+    <End Role="Classes" Type="Self.Classes" Multiplicity="1" />
+    <End Role="RegisterClass" Type="Self.RegisterClass" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Classes">
+        <PropertyRef Name="IdClass" />
+      </Principal>
+      <Dependent Role="RegisterClass">
+        <PropertyRef Name="IdClass" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RegisterClass_IdStudent">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="RegisterClass" Type="Self.RegisterClass" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="IdUser" />
+      </Principal>
+      <Dependent Role="RegisterClass">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RegisterNotifycation_IdNotify">
+    <End Role="Notifycation" Type="Self.Notifycation" Multiplicity="1" />
+    <End Role="RegisterNotifycation" Type="Self.RegisterNotifycation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Notifycation">
+        <PropertyRef Name="IdNotify" />
+      </Principal>
+      <Dependent Role="RegisterNotifycation">
+        <PropertyRef Name="IdNotify" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RegisterNotifycation_IdUser">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="RegisterNotifycation" Type="Self.RegisterNotifycation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="IdUser" />
+      </Principal>
+      <Dependent Role="RegisterNotifycation">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RelationShip_DetailUsersCCCD">
+    <End Role="DetailUsers" Type="Self.DetailUsers" Multiplicity="1" />
+    <End Role="RelationShip" Type="Self.RelationShip" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetailUsers">
+        <PropertyRef Name="CCCD" />
+      </Principal>
+      <Dependent Role="RelationShip">
+        <PropertyRef Name="DetailUsersCCCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RelationShip_RelativeCCCD">
+    <End Role="Relative" Type="Self.Relative" Multiplicity="1" />
+    <End Role="RelationShip" Type="Self.RelationShip" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Relative">
+        <PropertyRef Name="CCCD" />
+      </Principal>
+      <Dependent Role="RelationShip">
+        <PropertyRef Name="RelativeCCCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fK_Result_IdClass">
+    <End Role="Classes" Type="Self.Classes" Multiplicity="1" />
+    <End Role="Result" Type="Self.Result" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Classes">
+        <PropertyRef Name="IdClass" />
+      </Principal>
+      <Dependent Role="Result">
+        <PropertyRef Name="IdClass" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fK_Result_IDStudent">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Result" Type="Self.Result" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="IdUser" />
+      </Principal>
+      <Dependent Role="Result">
+        <PropertyRef Name="IdStudent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Đồ_ÁnModel1StoreContainer">
+    <EntitySet Name="Classes" EntityType="Self.Classes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DatabaseImageTable" EntityType="Self.DatabaseImageTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetailUsers" EntityType="Self.DetailUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Notifycation" EntityType="Self.Notifycation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OTP" EntityType="Self.OTP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RegisterClass" EntityType="Self.RegisterClass" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RegisterNotifycation" EntityType="Self.RegisterNotifycation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RelationShip" EntityType="Self.RelationShip" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Relative" EntityType="Self.Relative" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Result" EntityType="Self.Result" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subjects" EntityType="Self.Subjects" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserRole" EntityType="Self.UserRole" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Users__CCCD__778AC167" Association="Self.FK__Users__CCCD__778AC167">
+      <End Role="DetailUsers" EntitySet="DetailUsers" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__IdAvatar__74AE54BC" Association="Self.FK__Users__IdAvatar__74AE54BC">
+      <End Role="DatabaseImageTable" EntitySet="DatabaseImageTable" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__IdOTP__76969D2E" Association="Self.FK__Users__IdOTP__76969D2E">
+      <End Role="OTP" EntitySet="OTP" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__IdUserRol__75A278F5" Association="Self.FK__Users__IdUserRol__75A278F5">
+      <End Role="UserRole" EntitySet="UserRole" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Classes_IdSubject" Association="Self.FK_Classes_IdSubject">
+      <End Role="Subjects" EntitySet="Subjects" />
+      <End Role="Classes" EntitySet="Classes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RegisterClass_IdClass" Association="Self.FK_RegisterClass_IdClass">
+      <End Role="Classes" EntitySet="Classes" />
+      <End Role="RegisterClass" EntitySet="RegisterClass" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RegisterClass_IdStudent" Association="Self.FK_RegisterClass_IdStudent">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="RegisterClass" EntitySet="RegisterClass" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RegisterNotifycation_IdNotify" Association="Self.FK_RegisterNotifycation_IdNotify">
+      <End Role="Notifycation" EntitySet="Notifycation" />
+      <End Role="RegisterNotifycation" EntitySet="RegisterNotifycation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RegisterNotifycation_IdUser" Association="Self.FK_RegisterNotifycation_IdUser">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="RegisterNotifycation" EntitySet="RegisterNotifycation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RelationShip_DetailUsersCCCD" Association="Self.FK_RelationShip_DetailUsersCCCD">
+      <End Role="DetailUsers" EntitySet="DetailUsers" />
+      <End Role="RelationShip" EntitySet="RelationShip" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RelationShip_RelativeCCCD" Association="Self.FK_RelationShip_RelativeCCCD">
+      <End Role="Relative" EntitySet="Relative" />
+      <End Role="RelationShip" EntitySet="RelationShip" />
+    </AssociationSet>
+    <AssociationSet Name="fK_Result_IdClass" Association="Self.fK_Result_IdClass">
+      <End Role="Classes" EntitySet="Classes" />
+      <End Role="Result" EntitySet="Result" />
+    </AssociationSet>
+    <AssociationSet Name="fK_Result_IDStudent" Association="Self.fK_Result_IDStudent">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Result" EntitySet="Result" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

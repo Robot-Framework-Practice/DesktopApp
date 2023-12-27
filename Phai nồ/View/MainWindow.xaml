@@ -1,0 +1,241 @@
+﻿<Window x:Class="Đồ_án.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Đồ_án"
+        xmlns:View="clr-namespace:Đồ_án.View"
+        xmlns:Command="clr-namespace:Đồ_án.Command"
+        xmlns:ViewModel="clr-namespace:Đồ_án.ViewModel"
+        xmlns:VM="clr-namespace:Đồ_án.ViewModel.DashBroad.Subject"
+        xmlns:Themes="clr-namespace:Đồ_án.Components"
+        xmlns:ViewM="clr-namespace:Đồ_án.ViewModel.DashBroad.Teacher"
+        mc:Ignorable="d"
+        Icon="\Resources\logo-uit.png"
+        Title="MainWindow" Height="700" Width="1220" 
+        AllowsTransparency="True" WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent">
+    <Grid>
+        <Border Background="#FF437575" CornerRadius="25" Height ="700"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="230"/>
+                <ColumnDefinition Width="970"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Background="DarkSlateGray" CornerRadius="25,0,0,25" Height ="700">
+
+
+                <StackPanel Grid.Column="0" Margin="0,0,0,0">
+                    <Border CornerRadius="25" BorderBrush="DarkSlateGray" BorderThickness="10">
+                        <Border CornerRadius="25"  Width="200" Height="100" Background="GhostWhite">
+                            <Image Source="\Resources\logo-uit.png" Margin="0"/>
+                        </Border>
+                    </Border>
+
+                    <StackPanel Margin="0,30,0,0" Width="230" Height="480">
+                        <StackPanel Visibility="{Binding IsRoleAdmin, Source={StaticResource LoginViewModel}}" Orientation="Horizontal">
+                            <!--Button Home-->
+                            <Image Grid.Row="0" 
+                           Source="\Resources\icons8_home_26px.png" 
+                           HorizontalAlignment="Left" 
+                           Height="35" Width="35"
+                           Margin="10,0,0,0"/>
+                            <Button x:Name="btnHome"
+                            Grid.Row="0" 
+                            Content="Home" 
+                            FontSize="20" 
+                            Height="60" Width="185"
+                            Background="DarkSlateGray"
+                            Foreground="White"
+                            FontWeight="DemiBold" BorderThickness="0,0,0,0"
+                            Command="{Binding HomeFrame, Source={StaticResource HomeViewModel}}">
+                            </Button>
+
+                            <!--Button Home-->
+                        </StackPanel>
+
+
+                        <StackPanel Orientation="Horizontal">
+                            <!--Button Profile-->
+                            <Image Grid.Row="1" 
+                           Source="\Resources\icons8_search_100px.png" 
+                           HorizontalAlignment="Left" 
+                           Height="35" Width="35"
+                           Margin="10,0,0,0"/>
+
+                            <Button Grid.Row="1" 
+                            Command="{Binding ProfileCommand, Source={StaticResource ProfileViewModel}}"
+                            x:Name="btnProfile"
+                            Height="55"
+                            Content="Profile" 
+                            FontSize="20" 
+                            Background="DarkSlateGray"
+                            Foreground="White"
+                            FontWeight="DemiBold" BorderThickness="0,0,0,0" HorizontalAlignment="Left" Width="185">
+
+                            </Button>
+
+                            <!--Button Profile-->
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <!--Button Edit-->
+
+                            <Image Grid.Row="2" 
+                           Source="\Resources\icons8_edit_100px_3.png" 
+                           HorizontalAlignment="Left" 
+                           Height="35" Width="35"
+                           Margin="10,0,0,0"/>
+
+                            <Button Grid.Row="2" 
+                            Name="btnInsert"
+                            Command="{Binding EducationCommand, Source={StaticResource EducationViewModel}}"
+                            Height="55"
+                            Content="Education" 
+                            FontSize="20" 
+                            Background="DarkSlateGray"
+                            Foreground="White"
+                            FontWeight="DemiBold" BorderThickness="0,0,0,0" HorizontalAlignment="Left" Width="185">
+                            </Button>
+
+                            <!--Button Edit-->
+                        </StackPanel>
+
+                        <StackPanel Visibility="{Binding IsRoleAdmin, Source={StaticResource LoginViewModel}}" Orientation="Horizontal">
+                            <!--Button Classes-->
+
+                            <Image Grid.Row="3" 
+                           Source="\Resources\icons8_student_male_100px.png" 
+                           HorizontalAlignment="Left" 
+                           Height="35" Width="35"
+                           Margin="10,0,0,0"/>
+
+                            <Button Grid.Row="3" 
+                            x:Name="btnClasses"
+                            Height="55"
+                            Content="Student" 
+                            FontSize="20" 
+                            Background="DarkSlateGray"
+                            Foreground="White"
+                            FontWeight="DemiBold" 
+                            BorderThickness="0,0,0,0"
+                            Command="{Binding MainClassCommand, Source={StaticResource MainClassViewModel}}" Width="185">
+
+                            </Button>
+
+                            <!--Button Classes-->
+                        </StackPanel>
+
+                        <StackPanel Visibility="{Binding IsRoleAdmin, Source={StaticResource LoginViewModel}}" Orientation="Horizontal">
+                            <!--Button Teacher-->
+
+                            <Image Grid.Row="5" 
+                           Source="\Resources\icons8_user_100px.png" 
+                           HorizontalAlignment="Left" 
+                           Height="35" Width="35"
+                           Margin="10,0,0,0"/>
+                            <Button Grid.Row="5" 
+                            Height="55"
+                            Width="185"
+                            Name="btnTeacher"
+                            Content="Teacher" 
+                            FontSize="20" 
+                            Background="DarkSlateGray"
+                            Foreground="White"
+                            FontWeight="DemiBold" BorderThickness="0,0,0,0"
+                            Command="{Binding TeacherFrame, Source={StaticResource TeacherViewModel}}">
+
+                            </Button>
+
+                            <!--Button Teacher-->
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <!--Button Subject-->
+
+                            <Image Grid.Row="6" 
+                           Source="\Resources\icons8_insert_table_100px.png" 
+                           HorizontalAlignment="Left" 
+                           Height="35" Width="35"
+                           Margin="10,0,0,0"/>
+                            <Button Grid.Row="6" 
+                            Height="55"
+                            Width="185"
+                            Name="btnSubject"
+                            Content="Subject" 
+                            FontSize="20" 
+                            Background="DarkSlateGray"
+                            Foreground="White"
+                            FontWeight="DemiBold" BorderThickness="0,0,0,0"
+                            Command="{Binding SubjectFrame, Source={StaticResource SubjectViewModel}}">
+                            </Button>
+
+                            <!--Button Subject-->
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <!--Button Schedule-->
+                            <Image Grid.Row="4" 
+                           Source="\Resources\icons8_university_campus_100px.png" 
+                           HorizontalAlignment="Left" 
+                           Height="35" Width="35"
+                           Margin="10,0,0,0"/>
+
+                            <Button Grid.Row="4" 
+                            x:Name="btnSchedule"
+                            Height="55"
+                            Width="185"
+                            Content="Classes" 
+                            FontSize="20" 
+                            Background="DarkSlateGray"
+                            Foreground="White"
+                            FontWeight="DemiBold" BorderThickness="0,0,0,0"
+                            Command="{Binding MainStudentCommand, Source={StaticResource MainStudentViewModel}}">
+                            </Button>
+
+                            <!--Button Schedule-->
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <!--Button Setting-->
+                            <Image Grid.Row="7" 
+                           Source="\Resources\icons8_wrench_100px_1.png" 
+                           HorizontalAlignment="Left" 
+                           Height="35" Width="35"
+                           Margin="10,0,0,0"/>
+
+                            <Button x:Name="btnSetting"
+                            Grid.Row="7" 
+                            Content="Setting" 
+                            Height="55"
+                            Width="185"
+                            FontSize="20" 
+                            Background="DarkSlateGray"
+                            Foreground="White"
+                            FontWeight="DemiBold" BorderThickness="0,0,0,0"
+                            Command="{Binding SettingCommand, Source={StaticResource SettingViewModel}}">
+                            </Button>
+
+                            <!--Button Setting-->
+                        </StackPanel>
+
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <Frame x:Name="MainFrame"
+                   NavigationUIVisibility="Hidden"
+                   Grid.Column="1">
+                <Frame.Background>
+                    <ImageBrush ImageSource="\Resources\HomePIcture.png" Stretch="Uniform"/>
+                </Frame.Background>
+            </Frame>
+        </Grid>
+    </Grid>
+
+</Window>
+
+
+<!--Color: #FF437575-->

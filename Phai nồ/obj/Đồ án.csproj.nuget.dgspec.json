@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\HIEU VY\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Máy tính\\Phai nồ\\Đồ án.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\HIEU VY\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Máy tính\\Phai nồ\\Đồ án.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HIEU VY\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Máy tính\\Phai nồ\\Đồ án.csproj",
+        "projectName": "Đồ án",
+        "projectPath": "C:\\Users\\HIEU VY\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Máy tính\\Phai nồ\\Đồ án.csproj",
+        "packagesPath": "C:\\Users\\HIEU VY\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HIEU VY\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Máy tính\\Phai nồ\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\HIEU VY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[2.0.9, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

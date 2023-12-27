@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73887B2A-7ADD-4F9B-86D2-B99F39F72975}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Đồ_án</RootNamespace>
+    <AssemblyName>Đồ án</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=2.0.9.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialDesignColors.2.0.9\lib\net462\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=4.6.1.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialDesignThemes.4.6.1\lib\net462\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Xaml.Behaviors.Wpf.1.1.39\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Command\ConfirmInformationCommand.cs" />
+    <Compile Include="Command\EditInformationCommand.cs" />
+    <Compile Include="Command\ExitCommand.cs" />
+    <Compile Include="Command\FindCommand.cs" />
+    <Compile Include="Command\MainClassCommand.cs" />
+    <Compile Include="Command\ProfileCommand.cs" />
+    <Compile Include="Command\RelayCommand.cs" />
+    <Compile Include="Command\SettingCommand.cs" />
+    <Compile Include="Components\BindablePasswordBox.xaml.cs">
+      <DependentUpon>BindablePasswordBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Class\ClassDetail.xaml.cs">
+      <DependentUpon>ClassDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Class\ClassListing.xaml.cs">
+      <DependentUpon>ClassListing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Education\Information.xaml.cs">
+      <DependentUpon>Information.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Education\Schedule.xaml.cs">
+      <DependentUpon>Schedule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\NotifycationListing.xaml.cs">
+      <DependentUpon>NotifycationListing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Education\Result.xaml.cs">
+      <DependentUpon>Result.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\NotifycationUpdating.xaml.cs">
+      <DependentUpon>NotifycationUpdating.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Student\StudentListing.xaml.cs">
+      <DependentUpon>StudentListing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Student\StudentRegister.xaml.cs">
+      <DependentUpon>StudentRegister.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Student\StudentSearching.xaml.cs">
+      <DependentUpon>StudentSearching.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Subject\SubjectListing.xaml.cs">
+      <DependentUpon>SubjectListing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Subject\SubjectUpdating.xaml.cs">
+      <DependentUpon>SubjectUpdating.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Teacher\TeacherListing.xaml.cs">
+      <DependentUpon>TeacherListing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Teacher\TeacherSearching.xaml.cs">
+      <DependentUpon>TeacherSearching.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Teacher\TeacherUpdating.xaml.cs">
+      <DependentUpon>TeacherUpdating.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ToggleSwitchButton.cs" />
+    <Compile Include="Database\Class.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DatabaseImageTable.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DataProvider.cs" />
+    <Compile Include="Database\DetailUser.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Notifycation.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\OTP.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Relative.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Subject.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\User.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\UserRole.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Address.cs" />
+    <Compile Include="Model\Country.cs" />
+    <Compile Include="Model\ProfileStudent.cs" />
+    <Compile Include="Services\DatabaseImageTableServices.cs" />
+    <Compile Include="Services\ImageUploader.cs" />
+    <Compile Include="Services\Login\LoginServices.cs" />
+    <Compile Include="Services\Login\OTPServices.cs" />
+    <Compile Include="Services\UserServices.cs" />
+    <Compile Include="Services\VietnameseStringNormalizer.cs" />
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\Class\ClassDataStore.cs" />
+    <Compile Include="ViewModel\DashBroad\Class\ClassDetailViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\Class\ClassListingViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\ConfirmInformationViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\Education\Components\InformationViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\Education\Components\ResultViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\Education\Components\ScheduleViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\HomeViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\Class\MainClassViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\Student\MainStudentViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\Student\StudentDataStore.cs" />
+    <Compile Include="ViewModel\DashBroad\Student\StudentItemViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\Student\StudentListingViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\Subject\SubjectViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\Teacher\TeacherViewModel.cs" />
+    <Compile Include="ViewModel\EditInformationViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\Education\EducationViewModel.cs" />
+    <Compile Include="ViewModel\ErrorBaseViewModel.cs" />
+    <Compile Include="ViewModel\ExitViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\FindViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\ProfileViewModel.cs" />
+    <Compile Include="ViewModel\DashBroad\SettingViewModel.cs" />
+    <Compile Include="ViewModel\Login\LoginViewModel.cs" />
+    <Compile Include="ViewModel\Login\Utilities\InverseVisibilityConverter.cs" />
+    <Compile Include="ViewModel\Login\Utilities\IsNullConverter.cs" />
+    <Compile Include="ViewModel\Login\Utilities\SHA256Cryptography.cs" />
+    <Compile Include="View\Education.xaml.cs">
+      <DependentUpon>Education.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\InsertNewNotifycation.xaml.cs">
+      <DependentUpon>InsertNewNotifycation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\InsertNewRegisterNotifycation.xaml.cs">
+      <DependentUpon>InsertNewRegisterNotifycation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OpenNotifycation.xaml.cs">
+      <DependentUpon>OpenNotifycation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Student\AddStudent.xaml.cs">
+      <DependentUpon>AddStudent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Class\Class.xaml.cs">
+      <DependentUpon>Class.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\FogotPassWord.xaml.cs">
+      <DependentUpon>FogotPassWord.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Subject\InsertNewSubject.xaml.cs">
+      <DependentUpon>InsertNewSubject.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Teacher\InsertNewTeacher.xaml.cs">
+      <DependentUpon>InsertNewTeacher.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Class\MainClass.xaml.cs">
+      <DependentUpon>MainClass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Student\MainStudent.xaml.cs">
+      <DependentUpon>MainStudent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Profile.xaml.cs">
+      <DependentUpon>Profile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Setting.xaml.cs">
+      <DependentUpon>Setting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Subject\Subject.xaml.cs">
+      <DependentUpon>Subject.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Teacher\Teacher.xaml.cs">
+      <DependentUpon>Teacher.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UpdatingNotifycation.xaml.cs">
+      <DependentUpon>UpdatingNotifycation.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Components\BindablePasswordBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\Class\ClassDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\Class\ClassListing.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Components\Education\Information.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\Education\Schedule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\NotifycationListing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\Education\Result.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\NotifycationUpdating.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\Student\StudentListing.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Components\Student\StudentRegister.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\Student\StudentSearching.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Components\Subject\SubjectListing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\Subject\SubjectUpdating.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\Teacher\TeacherListing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\Teacher\TeacherSearching.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\Teacher\TeacherUpdating.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Xaml\IconsResource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Xaml\MaterialDesignResource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Xaml\ViewModelResources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Xaml\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Education.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\InsertNewNotifycation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\InsertNewRegisterNotifycation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\OpenNotifycation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Student\AddStudent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Class\Class.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\FogotPassWord.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Subject\InsertNewSubject.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Teacher\InsertNewTeacher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="View\Class\MainClass.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Student\MainStudent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Page1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Profile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Setting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Subject\Subject.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Teacher\Teacher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UpdatingNotifycation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <EntityDeploy Include="Database\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Database\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons8_wrench_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons8_list_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\logo-uit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons8_home_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons8_customer_30px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons8_Edit_Delivery_Terms_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons8_day_view_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons8_close_window_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons8_home_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons8_male_user_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons8_Credit_Card_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons8_teacher_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\HomePIcture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\School-Border-Backgrounds-1024x768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="MaterialDesignColors">
+      <Version>2.0.9</Version>
+    </PackageReference>
+    <PackageReference Include="MaterialDesignThemes">
+      <Version>4.9.0</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons8_update_50px.png" />
+    <Resource Include="Resources\icons8_Delete_50px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Command\Login\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons8_user_100px.png" />
+    <Resource Include="Resources\icons8_search_100px.png" />
+    <Resource Include="Resources\icons8_edit_100px_3.png" />
+    <Resource Include="Resources\icons8_wrench_100px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons8_university_campus_100px.png" />
+    <Resource Include="Resources\icons8_insert_table_100px.png" />
+    <Resource Include="Resources\icons8_student_male_100px.png" />
+    <Resource Include="Resources\icons8_add_48px.png" />
+    <Content Include="Database\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Database\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Resources\template-mail.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

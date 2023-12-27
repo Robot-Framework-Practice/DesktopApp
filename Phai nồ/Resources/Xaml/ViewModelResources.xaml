@@ -1,0 +1,28 @@
+﻿<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:viewmodel="clr-namespace:Đồ_án.ViewModel"
+    xmlns:dashbroad="clr-namespace:Đồ_án.ViewModel.DashBroad"
+    xmlns:login="clr-namespace:Đồ_án.ViewModel.Login"
+    xmlns:VM="clr-namespace:Đồ_án.ViewModel.DashBroad.Teacher"
+    xmlns:ViewModel="clr-namespace:Đồ_án.ViewModel.DashBroad.Education.Components"
+    xmlns:subject="clr-namespace:Đồ_án.ViewModel.DashBroad.Subject">
+
+    <viewmodel:LoginViewModel x:Key="LoginViewModel"/>
+    <login:InverseVisibilityConverter x:Key="InverseVisibilityConverter"/>
+    <viewmodel:MainClassViewModel x:Key="MainClassViewModel" />
+    <viewmodel:SettingViewModel x:Key="SettingViewModel"/>
+    <viewmodel:HomeViewModel x:Key="HomeViewModel"/>
+    <dashbroad:StudentListingViewModel x:Key="StudentListingViewModel"/>
+    <dashbroad:ClassDetailViewModel x:Key="ClassDetailViewModel"/>
+    <VM:TeacherViewModel x:Key="TeacherViewModel"/>
+    <viewmodel:ExitViewModel x:Key="ExitViewModel"/>
+    <viewmodel:ProfileViewModel x:Key="ProfileViewModel"/>
+    <viewmodel:ResultViewModel x:Key="ResultViewModel" />
+    <ViewModel:ScheduleViewModel x:Key="ScheduleViewModel"/>
+    <viewmodel:EducationViewModel x:Key="EducationViewModel" />
+    <viewmodel:MainStudentViewModel x:Key="MainStudentViewModel" />
+    <subject:SubjectViewModel x:Key="SubjectViewModel"/>
+    <viewmodel:InformationViewModel x:Key="InformationViewModel" />
+
+</ResourceDictionary>

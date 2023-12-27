@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Đồ_ÁnModelStoreContainer" CdmEntityContainer="Đồ_ÁnEntities">
+    <EntitySetMapping Name="Classes">
+      <EntityTypeMapping TypeName="Đồ_ÁnModel.Class">
+        <MappingFragment StoreEntitySet="Classes">
+          <ScalarProperty Name="IdClass" ColumnName="IdClass" />
+          <ScalarProperty Name="NgBD" ColumnName="NgBD" />
+          <ScalarProperty Name="NgKT" ColumnName="NgKT" />
+          <ScalarProperty Name="IdSubject" ColumnName="IdSubject" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DatabaseImageTables">
+      <EntityTypeMapping TypeName="Đồ_ÁnModel.DatabaseImageTable">
+        <MappingFragment StoreEntitySet="DatabaseImageTable">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetailUsers">
+      <EntityTypeMapping TypeName="Đồ_ÁnModel.DetailUser">
+        <MappingFragment StoreEntitySet="DetailUsers">
+          <ScalarProperty Name="CCCD" ColumnName="CCCD" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="BirthPlace" ColumnName="BirthPlace" />
+          <ScalarProperty Name="PLACE_CCCD" ColumnName="PLACE_CCCD" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Ethnic" ColumnName="Ethnic" />
+          <ScalarProperty Name="SecondarySchool" ColumnName="SecondarySchool" />
+          <ScalarProperty Name="HealthInsuranceID" ColumnName="HealthInsuranceID" />
+          <ScalarProperty Name="AcademicAchievement" ColumnName="AcademicAchievement" />
+          <ScalarProperty Name="FacultyCode" ColumnName="FacultyCode" />
+          <ScalarProperty Name="FacultyName" ColumnName="FacultyName" />
+          <ScalarProperty Name="Majors" ColumnName="Majors" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notifycations">
+      <EntityTypeMapping TypeName="Đồ_ÁnModel.Notifycation">
+        <MappingFragment StoreEntitySet="Notifycation">
+          <ScalarProperty Name="IdNotify" ColumnName="IdNotify" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="DateNotify" ColumnName="DateNotify" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="SentTime" ColumnName="SentTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OTPs">
+      <EntityTypeMapping TypeName="Đồ_ÁnModel.OTP">
+        <MappingFragment StoreEntitySet="OTP">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Relatives">
+      <EntityTypeMapping TypeName="Đồ_ÁnModel.Relative">
+        <MappingFragment StoreEntitySet="Relative">
+          <ScalarProperty Name="CCCD" ColumnName="CCCD" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Ethnic" ColumnName="Ethnic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Results">
+      <EntityTypeMapping TypeName="Đồ_ÁnModel.Result">
+        <MappingFragment StoreEntitySet="Result">
+          <ScalarProperty Name="IdStudent" ColumnName="IdStudent" />
+          <ScalarProperty Name="IdClass" ColumnName="IdClass" />
+          <ScalarProperty Name="QT" ColumnName="QT" />
+          <ScalarProperty Name="GK" ColumnName="GK" />
+          <ScalarProperty Name="TH" ColumnName="TH" />
+          <ScalarProperty Name="CK" ColumnName="CK" />
+          <ScalarProperty Name="DiemTB" ColumnName="DiemTB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subjects">
+      <EntityTypeMapping TypeName="Đồ_ÁnModel.Subject">
+        <MappingFragment StoreEntitySet="Subjects">
+          <ScalarProperty Name="IdSubject" ColumnName="IdSubject" />
+          <ScalarProperty Name="NameSubject" ColumnName="NameSubject" />
+          <ScalarProperty Name="TinChiLT" ColumnName="TinChiLT" />
+          <ScalarProperty Name="TinChiTH" ColumnName="TinChiTH" />
+          <ScalarProperty Name="RatioQT" ColumnName="RatioQT" />
+          <ScalarProperty Name="RatioGK" ColumnName="RatioGK" />
+          <ScalarProperty Name="RatioTH" ColumnName="RatioTH" />
+          <ScalarProperty Name="RatioCK" ColumnName="RatioCK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRoles">
+      <EntityTypeMapping TypeName="Đồ_ÁnModel.UserRole">
+        <MappingFragment StoreEntitySet="UserRole">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Đồ_ÁnModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="Passwd" ColumnName="Passwd" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="IdOTP" ColumnName="IdOTP" />
+          <ScalarProperty Name="IdUserRole" ColumnName="IdUserRole" />
+          <ScalarProperty Name="IdAvatar" ColumnName="IdAvatar" />
+          <ScalarProperty Name="CCCD" ColumnName="CCCD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="RegisterClass" TypeName="Đồ_ÁnModel.RegisterClass" StoreEntitySet="RegisterClass">
+      <EndProperty Name="Classes">
+        <ScalarProperty Name="IdClass" ColumnName="IdClass" />
+      </EndProperty>
+      <EndProperty Name="Users">
+        <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="RegisterNotifycation" TypeName="Đồ_ÁnModel.RegisterNotifycation" StoreEntitySet="RegisterNotifycation">
+      <EndProperty Name="Notifycation">
+        <ScalarProperty Name="IdNotify" ColumnName="IdNotify" />
+      </EndProperty>
+      <EndProperty Name="Users">
+        <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="RelationShip" TypeName="Đồ_ÁnModel.RelationShip" StoreEntitySet="RelationShip">
+      <EndProperty Name="DetailUsers">
+        <ScalarProperty Name="CCCD" ColumnName="DetailUsersCCCD" />
+      </EndProperty>
+      <EndProperty Name="Relative">
+        <ScalarProperty Name="CCCD" ColumnName="RelativeCCCD" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

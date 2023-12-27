@@ -1,0 +1,177 @@
+﻿<UserControl x:Class="Đồ_án.View.Subject"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:components="clr-namespace:Đồ_án.Components"
+      xmlns:ViewModel="clr-namespace:Đồ_án.ViewModel"
+      xmlns:VM="clr-namespace:Đồ_án.ViewModel.DashBroad.Subject"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="970">
+    <UserControl.DataContext>
+        <VM:SubjectViewModel></VM:SubjectViewModel>
+    </UserControl.DataContext>
+
+    <Grid Background="GhostWhite">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <materialDesign:ColorZone  Width="970" Height="90" Mode="Inverted" Padding="16" Background="DarkSlateGray">
+            <DockPanel>
+                <materialDesign:PopupBox DockPanel.Dock="Right" PlacementMode="BottomAndAlignRightEdges"
+                                         Foreground="White"
+                                         FontSize="20">
+                    <ListBox Background="GhostWhite">
+                        <ListBoxItem Width="150" Height="50">
+                            <Button Command="{Binding ShowLogin}" Content="Logout" Foreground="DarkSlateGray"
+                                    Width="150" Height="50">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="\Resources\icons8_close_window_52px.png"/>
+                                </Button.Background>
+                                <Button.DataContext>
+                                    <ViewModel:LoginViewModel/>
+                                </Button.DataContext>
+                            </Button>
+                        </ListBoxItem>
+                        <ListBoxItem Width="150" Height="50">
+                            <Button Command="{Binding ExitCommand, Source={StaticResource ExitViewModel}}" Content="Exit" Foreground="DarkSlateGray"
+                                    Width="150" Height="50">
+                            </Button>
+                        </ListBoxItem>
+                    </ListBox>
+                </materialDesign:PopupBox>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Margin="16 0 0 0" Text="Subject" FontSize="25"/>
+                </StackPanel>
+            </DockPanel>
+        </materialDesign:ColorZone>
+
+        <TabControl Grid.Row="1" HorizontalAlignment="Center"
+            Width="950">
+            <TabItem Header="Listing">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="80"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1.2*"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <components:SubjectListing Grid.Column="0" />
+
+                        <Grid Grid.Column="1">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Border
+                                Grid.Row="0"
+                                BorderBrush="Gray"
+                                BorderThickness="3"
+                                CornerRadius="0"
+                                Height="52"
+                                Width="350"
+                                Margin="10">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5*"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox 
+                                        materialDesign:HintAssist.Hint="Subjects" 
+                                        FontSize="15" 
+                                        Margin="10" 
+                                        Grid.Column="0"
+                                        Text="{Binding Filter, UpdateSourceTrigger=PropertyChanged}"
+                                        />
+                                    <Button 
+                                        Grid.Column="1"   
+                                        Height="55"
+                                        Width="60">
+                                        <Image
+                                            x:Name="SearchBar"
+                                            Source="\Resources\icons8_search_100px.png" 
+                                            Height="25" Width="25"
+                                            Margin="-8, -5, 0, 0"/>
+                                    </Button>
+                                </Grid>
+                            </Border>
+
+
+                            <Grid Grid.Row="1">
+                                <Border 
+                                    BorderBrush="Gray"
+                                    BorderThickness="1"
+                                    CornerRadius="10"
+                                    Margin="10,10,30,10">
+                                    <ListView x:Name="ListVw" ItemsSource="{Binding SubjectFiltering, UpdateSourceTrigger=PropertyChanged}">
+                                        <ListView.View >
+                                            <GridView>
+                                                <GridViewColumn                             
+                                                    Width="200"                            
+                                                    Header="Class name"
+                                                    DisplayMemberBinding="{Binding NameSubject}"/>
+                                                <GridViewColumn
+                                                    Width="120"  
+                                                    Header="Class ID" 
+                                                    DisplayMemberBinding="{Binding IdSubject}"/>
+
+
+
+                                            </GridView>
+                                        </ListView.View>
+                                    </ListView>
+                                </Border>
+                            </Grid>
+
+
+
+                        </Grid>
+                    </Grid>
+
+
+
+
+
+                    <Grid Grid.Row="1"
+                          Visibility="{Binding IsRoleAdmin,Source={StaticResource LoginViewModel}}">
+
+                        <Button
+                            x:Name="AddBtn"
+                            Content="Add new Subject"
+                            FontSize="16"
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Center" 
+                            Width="400" 
+                            Height="40"
+                            Command="{Binding InsertNewSubject}">
+                        </Button>
+
+
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+            <TabItem Name="tab2" IsSelected="{Binding Index, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                Header="Update">
+                <Grid>
+                    <components:SubjectUpdating Margin="0,0,0,50" Width="800" HorizontalAlignment="Center"/>
+                </Grid>
+            </TabItem>
+
+
+        </TabControl>
+
+
+
+    </Grid>
+</UserControl>

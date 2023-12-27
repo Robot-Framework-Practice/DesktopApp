@@ -1,0 +1,14 @@
+KHÔNG CẦN THIẾT PHẢI LÀM CÁC BƯỚC NÀY NẾU KO DÙNG CHỨC NĂNG "OTP" trong phần "forgot password"
+
+https://myaccount.google.com/intro/security
+
+set "2-Step Verification" on
+
+set "App passwords":
+    Select App: "Mail"
+    Select device: "Windows Computer"
+
+ròi vào App.xaml.cs
+set Gmail và PassWordApp
+
+ròi chạy database như bình thường

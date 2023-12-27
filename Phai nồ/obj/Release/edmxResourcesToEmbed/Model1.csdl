@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Đồ_ÁnModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Class">
+    <Key>
+      <PropertyRef Name="IdClass" />
+    </Key>
+    <Property Name="IdClass" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NgBD" Type="DateTime" Precision="0" />
+    <Property Name="NgKT" Type="DateTime" Precision="0" />
+    <Property Name="IdSubject" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Subject" Relationship="Self.FK_Classes_IdSubject" FromRole="Classes" ToRole="Subjects" />
+    <NavigationProperty Name="Results" Relationship="Self.fK_Result_IdClass" FromRole="Classes" ToRole="Result" />
+    <NavigationProperty Name="Users" Relationship="Self.RegisterClass" FromRole="Classes" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="DatabaseImageTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Users__IdAvatar__74AE54BC" FromRole="DatabaseImageTable" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="DetailUser">
+    <Key>
+      <PropertyRef Name="CCCD" />
+    </Key>
+    <Property Name="CCCD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="Boolean" />
+    <Property Name="DateOfBirth" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="BirthPlace" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PLACE_CCCD" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Ethnic" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SecondarySchool" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="HealthInsuranceID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="AcademicAchievement" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FacultyCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FacultyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Majors" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Users__CCCD__778AC167" FromRole="DetailUsers" ToRole="Users" />
+    <NavigationProperty Name="Relatives" Relationship="Self.RelationShip" FromRole="DetailUsers" ToRole="Relative" />
+  </EntityType>
+  <EntityType Name="Notifycation">
+    <Key>
+      <PropertyRef Name="IdNotify" />
+    </Key>
+    <Property Name="IdNotify" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DateNotify" Type="DateTime" Precision="3" />
+    <Property Name="Header" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SentTime" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Users" Relationship="Self.RegisterNotifycation" FromRole="Notifycation" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="OTP">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Time" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Users__IdOTP__76969D2E" FromRole="OTP" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Relative">
+    <Key>
+      <PropertyRef Name="CCCD" />
+    </Key>
+    <Property Name="CCCD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="Boolean" />
+    <Property Name="Occupation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DateOfBirth" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Ethnic" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DetailUsers" Relationship="Self.RelationShip" FromRole="Relative" ToRole="DetailUsers" />
+  </EntityType>
+  <EntityType Name="Result">
+    <Key>
+      <PropertyRef Name="IdStudent" />
+      <PropertyRef Name="IdClass" />
+    </Key>
+    <Property Name="IdStudent" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdClass" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="QT" Type="Double" />
+    <Property Name="GK" Type="Double" />
+    <Property Name="TH" Type="Double" />
+    <Property Name="CK" Type="Double" />
+    <Property Name="DiemTB" Type="Double" />
+    <NavigationProperty Name="Class" Relationship="Self.fK_Result_IdClass" FromRole="Result" ToRole="Classes" />
+    <NavigationProperty Name="User" Relationship="Self.fK_Result_IDStudent" FromRole="Result" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Subject">
+    <Key>
+      <PropertyRef Name="IdSubject" />
+    </Key>
+    <Property Name="IdSubject" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NameSubject" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TinChiLT" Type="Int32" />
+    <Property Name="TinChiTH" Type="Int32" />
+    <Property Name="RatioQT" Type="Double" />
+    <Property Name="RatioGK" Type="Double" />
+    <Property Name="RatioTH" Type="Double" />
+    <Property Name="RatioCK" Type="Double" />
+    <NavigationProperty Name="Classes" Relationship="Self.FK_Classes_IdSubject" FromRole="Subjects" ToRole="Classes" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Role" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Users__IdUserRol__75A278F5" FromRole="UserRole" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="IdUser" />
+    </Key>
+    <Property Name="IdUser" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Passwd" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+    <Property Name="DisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IdOTP" Type="Guid" />
+    <Property Name="IdUserRole" Type="Guid" />
+    <Property Name="IdAvatar" Type="Guid" />
+    <Property Name="CCCD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="DatabaseImageTable" Relationship="Self.FK__Users__IdAvatar__74AE54BC" FromRole="Users" ToRole="DatabaseImageTable" />
+    <NavigationProperty Name="DetailUser" Relationship="Self.FK__Users__CCCD__778AC167" FromRole="Users" ToRole="DetailUsers" />
+    <NavigationProperty Name="OTP" Relationship="Self.FK__Users__IdOTP__76969D2E" FromRole="Users" ToRole="OTP" />
+    <NavigationProperty Name="Results" Relationship="Self.fK_Result_IDStudent" FromRole="Users" ToRole="Result" />
+    <NavigationProperty Name="UserRole" Relationship="Self.FK__Users__IdUserRol__75A278F5" FromRole="Users" ToRole="UserRole" />
+    <NavigationProperty Name="Classes" Relationship="Self.RegisterClass" FromRole="Users" ToRole="Classes" />
+    <NavigationProperty Name="Notifycations" Relationship="Self.RegisterNotifycation" FromRole="Users" ToRole="Notifycation" />
+  </EntityType>
+  <Association Name="FK_Classes_IdSubject">
+    <End Role="Subjects" Type="Self.Subject" Multiplicity="1" />
+    <End Role="Classes" Type="Self.Class" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subjects">
+        <PropertyRef Name="IdSubject" />
+      </Principal>
+      <Dependent Role="Classes">
+        <PropertyRef Name="IdSubject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fK_Result_IdClass">
+    <End Role="Classes" Type="Self.Class" Multiplicity="1" />
+    <End Role="Result" Type="Self.Result" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Classes">
+        <PropertyRef Name="IdClass" />
+      </Principal>
+      <Dependent Role="Result">
+        <PropertyRef Name="IdClass" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__IdAvatar__74AE54BC">
+    <End Role="DatabaseImageTable" Type="Self.DatabaseImageTable" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DatabaseImageTable">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="IdAvatar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__CCCD__778AC167">
+    <End Role="DetailUsers" Type="Self.DetailUser" Multiplicity="1" />
+    <End Role="Users" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetailUsers">
+        <PropertyRef Name="CCCD" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="CCCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__IdOTP__76969D2E">
+    <End Role="OTP" Type="Self.OTP" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OTP">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="IdOTP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fK_Result_IDStudent">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="Result" Type="Self.Result" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="IdUser" />
+      </Principal>
+      <Dependent Role="Result">
+        <PropertyRef Name="IdStudent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__IdUserRol__75A278F5">
+    <End Role="UserRole" Type="Self.UserRole" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRole">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="IdUserRole" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RegisterClass">
+    <End Role="Classes" Type="Self.Class" Multiplicity="*" />
+    <End Role="Users" Type="Self.User" Multiplicity="*" />
+  </Association>
+  <Association Name="RegisterNotifycation">
+    <End Role="Notifycation" Type="Self.Notifycation" Multiplicity="*" />
+    <End Role="Users" Type="Self.User" Multiplicity="*" />
+  </Association>
+  <Association Name="RelationShip">
+    <End Role="DetailUsers" Type="Self.DetailUser" Multiplicity="*" />
+    <End Role="Relative" Type="Self.Relative" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="Đồ_ÁnEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Classes" EntityType="Self.Class" />
+    <EntitySet Name="DatabaseImageTables" EntityType="Self.DatabaseImageTable" />
+    <EntitySet Name="DetailUsers" EntityType="Self.DetailUser" />
+    <EntitySet Name="Notifycations" EntityType="Self.Notifycation" />
+    <EntitySet Name="OTPs" EntityType="Self.OTP" />
+    <EntitySet Name="Relatives" EntityType="Self.Relative" />
+    <EntitySet Name="Results" EntityType="Self.Result" />
+    <EntitySet Name="Subjects" EntityType="Self.Subject" />
+    <EntitySet Name="UserRoles" EntityType="Self.UserRole" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_Classes_IdSubject" Association="Self.FK_Classes_IdSubject">
+      <End Role="Subjects" EntitySet="Subjects" />
+      <End Role="Classes" EntitySet="Classes" />
+    </AssociationSet>
+    <AssociationSet Name="fK_Result_IdClass" Association="Self.fK_Result_IdClass">
+      <End Role="Classes" EntitySet="Classes" />
+      <End Role="Result" EntitySet="Results" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__IdAvatar__74AE54BC" Association="Self.FK__Users__IdAvatar__74AE54BC">
+      <End Role="DatabaseImageTable" EntitySet="DatabaseImageTables" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__CCCD__778AC167" Association="Self.FK__Users__CCCD__778AC167">
+      <End Role="DetailUsers" EntitySet="DetailUsers" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__IdOTP__76969D2E" Association="Self.FK__Users__IdOTP__76969D2E">
+      <End Role="OTP" EntitySet="OTPs" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="fK_Result_IDStudent" Association="Self.fK_Result_IDStudent">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Result" EntitySet="Results" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__IdUserRol__75A278F5" Association="Self.FK__Users__IdUserRol__75A278F5">
+      <End Role="UserRole" EntitySet="UserRoles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="RegisterClass" Association="Self.RegisterClass">
+      <End Role="Classes" EntitySet="Classes" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="RegisterNotifycation" Association="Self.RegisterNotifycation">
+      <End Role="Notifycation" EntitySet="Notifycations" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="RelationShip" Association="Self.RelationShip">
+      <End Role="DetailUsers" EntitySet="DetailUsers" />
+      <End Role="Relative" EntitySet="Relatives" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

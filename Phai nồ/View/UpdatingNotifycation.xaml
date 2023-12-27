@@ -1,0 +1,132 @@
+﻿<Page x:Class="Đồ_án.View.UpdatingNotifycation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Đồ_án.View"
+      xmlns:VM="clr-namespace:Đồ_án.ViewModel"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" DataContext="{StaticResource HomeViewModel}"
+      d:DesignHeight="700" d:DesignWidth="900">
+    <Grid Background="GhostWhite" Height="700" VerticalAlignment="Top">
+        <materialDesign:ColorZone  Width="970" Height="90" Mode="Inverted" Padding="16" Background="DarkSlateGray">
+            <DockPanel>
+                <materialDesign:PopupBox DockPanel.Dock="Right" PlacementMode="BottomAndAlignRightEdges"
+                                         Foreground="White"
+                                         FontSize="20">
+                    <ListBox Background="GhostWhite">
+                        <ListBoxItem Width="150" Height="50">
+                            <Button Command="{Binding ShowLogin, Source={StaticResource LoginViewModel}}" Content="Logout" Foreground="DarkSlateGray"
+                                    Width="150" Height="50">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="\Resources\icons8_close_window_52px.png"/>
+                                </Button.Background>
+                            </Button>
+                        </ListBoxItem>
+                        <ListBoxItem Width="150" Height="50">
+                            <Button Command="{Binding ExitCommand, Source={StaticResource ExitViewModel}}" Content="Exit" Foreground="DarkSlateGray"
+                                    Width="150" Height="50">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="\Resources\icons8_close_window_52px.png"/>
+                                </Button.Background>
+                            </Button>
+                        </ListBoxItem>
+                    </ListBox>
+                </materialDesign:PopupBox>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Margin="16 0 0 0" Text="Notifycation"
+                               FontSize="25"/>
+                </StackPanel>
+            </DockPanel>
+        </materialDesign:ColorZone>
+        <Border Width="960" Height="600" BorderThickness="1" BorderBrush="Gray" CornerRadius="20"
+                Padding="10" Margin="0,90,0,0">
+            <ScrollViewer Visibility="Visible">
+                <StackPanel>
+                    <TextBlock Padding="10"
+                        Text="Notifycation's Information"
+                        FontSize="18"></TextBlock>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="110"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="ID Notifycation">
+                        </TextBlock>
+                        <TextBox Padding="0 10 0 0"
+                                     Grid.Column="1"
+                                     Text="{Binding UpdateNotifycation.IdNotify, Mode=TwoWay}"
+                                     ></TextBox>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="110"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Header">
+                        </TextBlock>
+                        <TextBox Padding="0 10 0 0" 
+                                     Grid.Column="1" 
+                                     Text="{Binding UpdateNotifycation.Header, Mode=TwoWay}"
+                                     ></TextBox>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="110"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Date">
+                        </TextBlock>
+                        <DatePicker Padding="0 10 0 0"
+                                     Grid.Column="1" Width="200" HorizontalAlignment="Left"
+                                     SelectedDate="{Binding UpdateNotifycation.DateNotify, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                     ></DatePicker>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="110"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Time">
+                        </TextBlock>
+                        <materialDesign:TimePicker Padding="0 10 0 0" 
+                                     Grid.Column="1" Width="200" HorizontalAlignment="Left"
+                                     SelectedTime="{Binding UpdateNotifycation.DateNotify, Mode=TwoWay}"
+                                     ></materialDesign:TimePicker>
+                    </Grid>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="110"/>
+                            <ColumnDefinition Width="691*"/>
+                            <ColumnDefinition Width="91*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Content">
+                        </TextBlock>
+                    </Grid>
+                    <TextBox Padding="10 10 0 0" Width="830" Height="360" HorizontalAlignment="Left" VerticalScrollBarVisibility="Visible"
+                             Grid.Column="1" Margin="10,10,0,0" Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                             Grid.ColumnSpan="2" Background="White" TextWrapping="Wrap" AcceptsReturn="True" 
+                             Text="{Binding UpdateNotifycation.Content, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                    <Grid Height="100" Margin="0,0,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button Margin="20,0,20,0" Grid.Column="0" Grid.ColumnSpan="2" Content="Back" Background="#FFED6E93" Command="{Binding EducationFrame}"/>
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</Page>

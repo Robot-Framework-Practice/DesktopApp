@@ -1,0 +1,525 @@
+C:\Users\DELL\Downloads\Version 10-1-2023\bin\Debug\Đồ án.exe.config
+C:\Users\DELL\Downloads\Version 10-1-2023\bin\Debug\Đồ án.exe
+C:\Users\DELL\Downloads\Version 10-1-2023\bin\Debug\Đồ án.pdb
+C:\Users\DELL\Downloads\Version 10-1-2023\bin\Debug\MaterialDesignColors.dll
+C:\Users\DELL\Downloads\Version 10-1-2023\bin\Debug\MaterialDesignColors.pdb
+C:\Users\DELL\Downloads\Version 10-1-2023\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\DELL\Downloads\Version 10-1-2023\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\DELL\Downloads\Version 10-1-2023\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DELL\Downloads\Version 10-1-2023\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Downloads\Version 10-1-2023\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Downloads\Version 10-1-2023\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\DELL\Downloads\Version 10-1-2023\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Downloads\Version 10-1-2023\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Downloads\Version 10-1-2023\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\DELL\Downloads\Version 10-1-2023\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Đồ án.csproj.AssemblyReference.cache
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Đồ án.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Resources\Xaml\IconsResource.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Resources\Xaml\MaterialDesignResource.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\BindablePasswordBox.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Class\ClassDetail.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Class\ClassListing.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Education\Information.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Education\Schedule.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\NotifycationListing.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Education\Result.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\NotifycationUpdating.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Student\StudentListing.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Student\StudentRegister.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Student\StudentSearching.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Subject\SubjectListing.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Subject\SubjectUpdating.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Teacher\TeacherListing.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Teacher\TeacherSearching.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Teacher\TeacherUpdating.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Education.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\InsertNewNotifycation.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\InsertNewRegisterNotifycation.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\OpenNotifycation.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Student\AddStudent.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Class\Class.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\FogotPassWord.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Home.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Subject\InsertNewSubject.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Teacher\InsertNewTeacher.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Login.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Class\MainClass.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Student\MainStudent.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\MainWindow.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Page1.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Profile.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Setting.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Subject\Subject.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Teacher\Teacher.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\UpdatingNotifycation.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\App.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Đồ án_Content.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Đồ án_MarkupCompile.cache
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Đồ án_MarkupCompile.lref
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\App.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\BindablePasswordBox.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Class\ClassDetail.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Class\ClassListing.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Education\Information.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Education\Schedule.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\NotifycationListing.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Education\Result.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\NotifycationUpdating.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Student\StudentListing.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Student\StudentRegister.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Student\StudentSearching.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Subject\SubjectListing.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Subject\SubjectUpdating.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Teacher\TeacherListing.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Teacher\TeacherSearching.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Components\Teacher\TeacherUpdating.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Resources\Xaml\ViewModelResources.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Resources\Xaml\Generic.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Education.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\InsertNewNotifycation.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\InsertNewRegisterNotifycation.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\OpenNotifycation.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Student\AddStudent.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Class\Class.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\FogotPassWord.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Home.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Subject\InsertNewSubject.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Teacher\InsertNewTeacher.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Login.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Class\MainClass.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Student\MainStudent.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\MainWindow.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Page1.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Profile.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Setting.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Subject\Subject.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\Teacher\Teacher.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\View\UpdatingNotifycation.baml
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Đồ án.g.resources
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Đồ_án.Properties.Resources.resources
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Đồ án.csproj.GenerateResource.cache
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Đồ án.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Đồ án.csproj.CopyComplete
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Đồ án.exe
+C:\Users\DELL\Downloads\Version 10-1-2023\obj\Debug\Đồ án.pdb
+C:\Users\DELL\Downloads\Phai nồ\bin\Debug\Đồ án.exe.config
+C:\Users\DELL\Downloads\Phai nồ\bin\Debug\Đồ án.exe
+C:\Users\DELL\Downloads\Phai nồ\bin\Debug\Đồ án.pdb
+C:\Users\DELL\Downloads\Phai nồ\bin\Debug\MaterialDesignColors.dll
+C:\Users\DELL\Downloads\Phai nồ\bin\Debug\MaterialDesignColors.pdb
+C:\Users\DELL\Downloads\Phai nồ\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\DELL\Downloads\Phai nồ\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\DELL\Downloads\Phai nồ\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DELL\Downloads\Phai nồ\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Downloads\Phai nồ\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Downloads\Phai nồ\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\DELL\Downloads\Phai nồ\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Downloads\Phai nồ\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Downloads\Phai nồ\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\DELL\Downloads\Phai nồ\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Đồ án.csproj.AssemblyReference.cache
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Đồ án.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Resources\Xaml\IconsResource.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Resources\Xaml\MaterialDesignResource.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\BindablePasswordBox.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Class\ClassDetail.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Class\ClassListing.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Education\Information.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Education\Schedule.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\NotifycationListing.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Education\Result.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\NotifycationUpdating.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Student\StudentListing.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Student\StudentRegister.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Student\StudentSearching.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Subject\SubjectListing.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Subject\SubjectUpdating.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Teacher\TeacherListing.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Teacher\TeacherSearching.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Teacher\TeacherUpdating.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Education.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\InsertNewNotifycation.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\InsertNewRegisterNotifycation.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\OpenNotifycation.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Student\AddStudent.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Class\Class.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\FogotPassWord.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Home.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Subject\InsertNewSubject.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Teacher\InsertNewTeacher.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Login.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Class\MainClass.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Student\MainStudent.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\MainWindow.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Page1.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Profile.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Setting.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Subject\Subject.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Teacher\Teacher.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\UpdatingNotifycation.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\App.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Đồ án_Content.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Đồ án_MarkupCompile.cache
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Đồ án_MarkupCompile.lref
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\App.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\BindablePasswordBox.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Class\ClassDetail.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Class\ClassListing.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Education\Information.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Education\Schedule.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\NotifycationListing.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Education\Result.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\NotifycationUpdating.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Student\StudentListing.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Student\StudentRegister.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Student\StudentSearching.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Subject\SubjectListing.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Subject\SubjectUpdating.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Teacher\TeacherListing.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Teacher\TeacherSearching.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Components\Teacher\TeacherUpdating.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Resources\Xaml\ViewModelResources.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Resources\Xaml\Generic.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Education.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\InsertNewNotifycation.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\InsertNewRegisterNotifycation.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\OpenNotifycation.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Student\AddStudent.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Class\Class.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\FogotPassWord.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Home.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Subject\InsertNewSubject.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Teacher\InsertNewTeacher.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Login.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Class\MainClass.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Student\MainStudent.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\MainWindow.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Page1.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Profile.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Setting.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Subject\Subject.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\Teacher\Teacher.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\View\UpdatingNotifycation.baml
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Đồ án.g.resources
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Đồ_án.Properties.Resources.resources
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Đồ án.csproj.GenerateResource.cache
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Đồ án.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Đồ án.csproj.CopyComplete
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Đồ án.exe
+C:\Users\DELL\Downloads\Phai nồ\obj\Debug\Đồ án.pdb
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Đồ án.csproj.AssemblyReference.cache
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Resources\Xaml\IconsResource.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Resources\Xaml\MaterialDesignResource.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\BindablePasswordBox.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Class\ClassDetail.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Class\ClassListing.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Education\Information.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Education\Schedule.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\NotifycationListing.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Education\Result.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\NotifycationUpdating.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Student\StudentListing.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Student\StudentRegister.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Student\StudentSearching.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Subject\SubjectListing.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Subject\SubjectUpdating.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Teacher\TeacherListing.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Teacher\TeacherSearching.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Teacher\TeacherUpdating.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Education.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\InsertNewNotifycation.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\InsertNewRegisterNotifycation.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\OpenNotifycation.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Student\AddStudent.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Class\Class.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\FogotPassWord.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Home.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Subject\InsertNewSubject.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Teacher\InsertNewTeacher.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Login.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Class\MainClass.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Student\MainStudent.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\MainWindow.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Page1.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Profile.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Setting.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Subject\Subject.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Teacher\Teacher.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\UpdatingNotifycation.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\App.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Đồ án_Content.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Đồ án_MarkupCompile.cache
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Đồ án_MarkupCompile.lref
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Đồ án.exe
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Đồ án.pdb
+C:\Users\Hii\Downloads\Phai nồ\bin\Debug\Đồ án.exe.config
+C:\Users\Hii\Downloads\Phai nồ\bin\Debug\Đồ án.exe
+C:\Users\Hii\Downloads\Phai nồ\bin\Debug\Đồ án.pdb
+C:\Users\Hii\Downloads\Phai nồ\bin\Debug\MaterialDesignColors.dll
+C:\Users\Hii\Downloads\Phai nồ\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Hii\Downloads\Phai nồ\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Hii\Downloads\Phai nồ\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Hii\Downloads\Phai nồ\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hii\Downloads\Phai nồ\bin\Debug\EntityFramework.dll
+C:\Users\Hii\Downloads\Phai nồ\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hii\Downloads\Phai nồ\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Hii\Downloads\Phai nồ\bin\Debug\EntityFramework.xml
+C:\Users\Hii\Downloads\Phai nồ\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hii\Downloads\Phai nồ\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Hii\Downloads\Phai nồ\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\App.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\BindablePasswordBox.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Class\ClassDetail.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Class\ClassListing.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Education\Information.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Education\Schedule.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\NotifycationListing.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Education\Result.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\NotifycationUpdating.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Student\StudentListing.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Student\StudentRegister.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Student\StudentSearching.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Subject\SubjectListing.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Subject\SubjectUpdating.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Teacher\TeacherListing.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Teacher\TeacherSearching.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Components\Teacher\TeacherUpdating.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Resources\Xaml\ViewModelResources.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Resources\Xaml\Generic.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Education.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\InsertNewNotifycation.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\InsertNewRegisterNotifycation.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\OpenNotifycation.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Student\AddStudent.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Class\Class.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\FogotPassWord.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Home.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Subject\InsertNewSubject.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Teacher\InsertNewTeacher.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Login.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Class\MainClass.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Student\MainStudent.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\MainWindow.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Page1.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Profile.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Setting.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Subject\Subject.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\Teacher\Teacher.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\View\UpdatingNotifycation.baml
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Đồ án.g.resources
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Đồ_án.Properties.Resources.resources
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Đồ án.csproj.GenerateResource.cache
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Đồ án.csproj.CoreCompileInputs.cache
+C:\Users\Hii\Downloads\Phai nồ\obj\Debug\Đồ án.csproj.CopyComplete
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\bin\Debug\Đồ án.exe.config
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\bin\Debug\Đồ án.exe
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\bin\Debug\Đồ án.pdb
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\bin\Debug\MaterialDesignColors.dll
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\bin\Debug\MaterialDesignColors.pdb
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\bin\Debug\Newtonsoft.Json.dll
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\bin\Debug\EntityFramework.dll
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\bin\Debug\EntityFramework.SqlServer.dll
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\bin\Debug\Microsoft.Xaml.Behaviors.dll
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\bin\Debug\EntityFramework.xml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\bin\Debug\EntityFramework.SqlServer.xml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Đồ án.csproj.AssemblyReference.cache
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Resources\Xaml\IconsResource.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Resources\Xaml\MaterialDesignResource.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\BindablePasswordBox.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Class\ClassDetail.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Class\ClassListing.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Education\Information.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Education\Schedule.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\NotifycationListing.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Education\Result.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\NotifycationUpdating.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Student\StudentListing.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Student\StudentRegister.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Student\StudentSearching.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Subject\SubjectListing.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Subject\SubjectUpdating.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Teacher\TeacherListing.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Teacher\TeacherSearching.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Teacher\TeacherUpdating.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Education.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\InsertNewNotifycation.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\InsertNewRegisterNotifycation.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\OpenNotifycation.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Student\AddStudent.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Class\Class.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\FogotPassWord.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Home.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Subject\InsertNewSubject.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Teacher\InsertNewTeacher.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Login.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Class\MainClass.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Student\MainStudent.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\MainWindow.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Page1.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Profile.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Setting.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Subject\Subject.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Teacher\Teacher.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\UpdatingNotifycation.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\App.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Đồ án_Content.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Đồ án_MarkupCompile.cache
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Đồ án_MarkupCompile.lref
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\App.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\BindablePasswordBox.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Class\ClassDetail.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Class\ClassListing.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Education\Information.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Education\Schedule.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\NotifycationListing.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Education\Result.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\NotifycationUpdating.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Student\StudentListing.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Student\StudentRegister.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Student\StudentSearching.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Subject\SubjectListing.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Subject\SubjectUpdating.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Teacher\TeacherListing.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Teacher\TeacherSearching.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Components\Teacher\TeacherUpdating.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Resources\Xaml\ViewModelResources.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Resources\Xaml\Generic.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Education.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\InsertNewNotifycation.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\InsertNewRegisterNotifycation.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\OpenNotifycation.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Student\AddStudent.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Class\Class.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\FogotPassWord.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Home.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Subject\InsertNewSubject.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Teacher\InsertNewTeacher.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Login.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Class\MainClass.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Student\MainStudent.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\MainWindow.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Page1.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Profile.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Setting.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Subject\Subject.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\Teacher\Teacher.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\View\UpdatingNotifycation.baml
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Đồ án.g.resources
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Đồ_án.Properties.Resources.resources
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Đồ án.csproj.GenerateResource.cache
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Đồ án.csproj.CoreCompileInputs.cache
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Đồ án.csproj.CopyComplete
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Đồ án.exe
+E:\UIT\Kiểm chứng phần mềm\Phai nồ\obj\Debug\Đồ án.pdb
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Đồ án.csproj.AssemblyReference.cache
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Resources\Xaml\IconsResource.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Resources\Xaml\MaterialDesignResource.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\BindablePasswordBox.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Class\ClassDetail.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Class\ClassListing.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Education\Information.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Education\Schedule.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\NotifycationListing.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Education\Result.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\NotifycationUpdating.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Student\StudentListing.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Student\StudentRegister.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Student\StudentSearching.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Subject\SubjectListing.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Subject\SubjectUpdating.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Teacher\TeacherListing.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Teacher\TeacherSearching.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Teacher\TeacherUpdating.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Education.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\InsertNewNotifycation.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\InsertNewRegisterNotifycation.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\OpenNotifycation.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Student\AddStudent.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Class\Class.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\FogotPassWord.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Home.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Subject\InsertNewSubject.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Teacher\InsertNewTeacher.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Login.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Class\MainClass.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Student\MainStudent.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\MainWindow.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Page1.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Profile.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Setting.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Subject\Subject.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Teacher\Teacher.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\UpdatingNotifycation.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\App.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Đồ án_Content.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Đồ án_MarkupCompile.cache
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Đồ án_MarkupCompile.lref
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Đồ án.exe
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Đồ án.pdb
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Debug\Đồ án.exe.config
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Debug\Đồ án.exe
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Debug\Đồ án.pdb
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Debug\MaterialDesignColors.dll
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Debug\MaterialDesignColors.pdb
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Debug\Newtonsoft.Json.dll
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Debug\EntityFramework.dll
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Debug\EntityFramework.xml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\App.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\BindablePasswordBox.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Class\ClassDetail.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Class\ClassListing.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Education\Information.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Education\Schedule.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\NotifycationListing.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Education\Result.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\NotifycationUpdating.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Student\StudentListing.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Student\StudentRegister.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Student\StudentSearching.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Subject\SubjectListing.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Subject\SubjectUpdating.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Teacher\TeacherListing.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Teacher\TeacherSearching.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Components\Teacher\TeacherUpdating.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Resources\Xaml\ViewModelResources.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Resources\Xaml\Generic.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Education.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\InsertNewNotifycation.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\InsertNewRegisterNotifycation.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\OpenNotifycation.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Student\AddStudent.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Class\Class.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\FogotPassWord.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Home.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Subject\InsertNewSubject.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Teacher\InsertNewTeacher.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Login.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Class\MainClass.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Student\MainStudent.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\MainWindow.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Page1.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Profile.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Setting.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Subject\Subject.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\Teacher\Teacher.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\View\UpdatingNotifycation.baml
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Đồ án.g.resources
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Đồ_án.Properties.Resources.resources
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Đồ án.csproj.GenerateResource.cache
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Đồ án.csproj.CoreCompileInputs.cache
+C:\Users\HIEU VY\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\Phai nồ\obj\Debug\Đồ án.csproj.CopyComplete

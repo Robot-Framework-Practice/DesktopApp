@@ -1,0 +1,70 @@
+﻿<Page x:Class="Đồ_án.View.Education"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Đồ_án.View"
+      xmlns:components="clr-namespace:Đồ_án.Components"
+      xmlns:Component="clr-namespace:Đồ_án.Components.Education"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:ViewModel="clr-namespace:Đồ_án.ViewModel"
+      xmlns:VM="clr-namespace:Đồ_án.ViewModel.DashBroad.Subject"
+      mc:Ignorable="d"
+      
+      d:DesignHeight="700" d:DesignWidth="970">
+
+    <Grid Background="GhostWhite">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <materialDesign:ColorZone  Width="970" Height="90" Mode="Inverted" Padding="16" Background="DarkSlateGray">
+            <DockPanel>
+                <materialDesign:PopupBox DockPanel.Dock="Right" PlacementMode="BottomAndAlignRightEdges"
+                                         Foreground="White"
+                                         FontSize="20">
+                    <ListBox Background="GhostWhite">
+                        <ListBoxItem Width="150" Height="50">
+                            <Button Command="{Binding ShowLogin, Source={StaticResource LoginViewModel}}" Content="Logout" Foreground="DarkSlateGray"
+                                    Width="150" Height="50">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="\Resources\icons8_close_window_52px.png"/>
+                                </Button.Background>
+                            </Button>
+                        </ListBoxItem>
+                        <ListBoxItem Width="150" Height="50">
+                            <Button Command="{Binding ExitCommand, Source={StaticResource ExitViewModel}}" Content="Exit" Foreground="DarkSlateGray"
+                                    Width="150" Height="50">
+                            </Button>
+                        </ListBoxItem>
+                    </ListBox>
+                </materialDesign:PopupBox>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="\Resources\icons8_customer_30px_1.png"/>
+                    <TextBlock VerticalAlignment="Center" Margin="16 0 0 0" Text="Profile" FontSize="25"/>
+                </StackPanel>
+            </DockPanel>
+        </materialDesign:ColorZone>
+        
+        <TabControl Grid.Row="1" HorizontalAlignment="Center"
+            Width="950">
+            <TabItem 
+                Header="Schedule">
+                <Component:Schedule/>
+            </TabItem>
+
+            <TabItem 
+                Header="Result">
+                <components:Result />
+            </TabItem>
+
+            <TabItem 
+                Header="Information">
+                <components:Information/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Page>

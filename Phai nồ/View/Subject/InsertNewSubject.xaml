@@ -1,0 +1,205 @@
+﻿<UserControl x:Class="Đồ_án.View.InsertNewSubject"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:Đồ_án.View"
+      xmlns:ViewModel="clr-namespace:Đồ_án.ViewModel"
+      xmlns:VM="clr-namespace:Đồ_án.ViewModel.DashBroad.Subject"
+      xmlns:vmdashboard="clr-namespace:Đồ_án.ViewModel.DashBroad"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="970">
+    <UserControl.DataContext>
+        <VM:SubjectViewModel/>
+    </UserControl.DataContext>
+    <Grid Background="GhostWhite">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <materialDesign:ColorZone  Width="970" Height="90" Mode="Inverted" Padding="16" Background="DarkSlateGray">
+                <DockPanel>
+                    <materialDesign:PopupBox DockPanel.Dock="Right" PlacementMode="BottomAndAlignRightEdges"
+                                         Foreground="White"
+                                         FontSize="20">
+                        <ListBox Background="GhostWhite">
+                            <ListBoxItem Width="150" Height="50">
+                                <Button Command="{Binding ShowLogin, Source={StaticResource LoginViewModel}}" Content="Logout" Foreground="DarkSlateGray"
+                                    Width="150" Height="50">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="\Resources\icons8_customer_30px_1.png"/>
+                                    </Button.Background>
+                                </Button>
+                            </ListBoxItem>
+                            <ListBoxItem Width="150" Height="50">
+                                <Button Command="{Binding ExitCommand, Source={StaticResource ExitViewModel}}" Content="Exit" Foreground="DarkSlateGray"
+                                    Width="150" Height="50">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="\Resources\icons8_close_window_52px.png"/>
+                                    </Button.Background>
+                                </Button>
+                            </ListBoxItem>
+                        </ListBox>
+                    </materialDesign:PopupBox>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="\Resources\icons8_customer_30px_1.png"/>
+                        <TextBlock VerticalAlignment="Center" Margin="16 0 0 0" Text="Information"
+                               FontSize="25"/>
+                    </StackPanel>
+                </DockPanel>
+            </materialDesign:ColorZone>
+
+
+
+            <Border  
+            Padding="20"
+            BorderBrush="Gray"
+            BorderThickness="1"
+            CornerRadius="10"
+            Margin="10,100,10,10">
+                <ScrollViewer Height="537">
+                    <StackPanel>
+                        <TextBlock Padding="10"
+                        Text="Subject's Information"
+                        FontSize="18"></TextBlock>
+                        <!--STUDENT-->
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="ID">
+                            </TextBlock>
+                            <TextBox Padding="0 10 0 0" 
+                                     Grid.Column="1"
+                                     Text="{Binding NewSubject.IdSubject, Mode=TwoWay}"
+                                     ></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition Width="691*"/>
+                                <ColumnDefinition Width="91*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Name Subject">
+                            </TextBlock>
+                            <TextBox Padding="0 10 0 0" 
+                                     Grid.Column="1" 
+                                     Grid.ColumnSpan="2"
+                                     Text="{Binding NewSubject.NameSubject, Mode=TwoWay}"></TextBox>
+                        </Grid>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Theory Credits">
+                            </TextBlock>
+                            <TextBox Padding="0 10 0 0" 
+                                     Grid.Column="1"
+                                     Text="{Binding NewSubject.TinChiLT}"
+                                     ></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Pratice Credits">
+                            </TextBlock>
+                            <TextBox Padding="0 10 0 0" 
+                                     Grid.Column="1"
+                                     Text="{Binding NewSubject.TinChiTH}"
+                                     ></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Date Start">
+                            </TextBlock>
+                            <DatePicker Padding="0 10 0 10" 
+                                     Grid.Column="1"
+                                     SelectedDate="{Binding NewSubject.NgBD}"
+                                     ></DatePicker>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Date End">
+                            </TextBlock>
+                            <DatePicker Padding="0 10 0 10" 
+                                     Grid.Column="1"
+                                     SelectedDate="{Binding NewSubject.NgKT}"
+                                     ></DatePicker>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock 
+                            Padding="8 10 10 10"
+                            Text="Type Education">
+                            </TextBlock>
+                            <TextBox Padding="0 10 0 0" 
+                                     Grid.Column="1"
+                                     Text="{Binding NewSubject.HeDT}"
+                                     ></TextBox>
+                        </Grid>
+                        <Grid Height="100" Margin="0,10,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Padding="8 10 0 10" Text="Ratio Process" Grid.Column="0" Grid.Row="0"/>
+                            <TextBlock Padding="8 10 0 10" Text="Ratio Pratice" Grid.Column="2"  Grid.Row="0"/>
+                            <TextBlock Padding="8 10 0 10" Text="Ratio Half Semester" Grid.Column="0" Grid.Row="1"/>
+                            <TextBlock Padding="8 10 0 10" Text="Ratio Semester" Grid.Column="2" Grid.Row="1"/>
+
+                            <TextBox Width="200" HorizontalAlignment="Left" Padding="0 10 0 10" Grid.Column="1" Grid.Row="0" Text="{Binding NewSubject.RatioQT}" VerticalAlignment="Center"/>
+                            <TextBox Width="200" HorizontalAlignment="Left" Padding="0 10 0 10" Grid.Column="1" Grid.Row="1" Text="{Binding NewSubject.RatioGK}" VerticalAlignment="Center"/>
+                            <TextBox Width="200" HorizontalAlignment="Left" Padding="0 10 0 10" Grid.Column="3" Grid.Row="0" Text="{Binding NewSubject.RatioTH}" VerticalAlignment="Center"/>
+                            <TextBox Width="200" HorizontalAlignment="Left" Padding="0 10 0 10" Grid.Column="3" Grid.Row="1" Text="{Binding NewSubject.RatioCK}" VerticalAlignment="Center"/>
+
+                        </Grid>
+
+                        <Grid Height="100" Margin="0,20,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Button Margin="20,0,20,0" Grid.Column="0" Content="Confirm" Command="{Binding AddSubject}"/>
+                            <Button Margin="20,0,20,0" Grid.Column="1" Content="Cancel" Background="#FFED6E93" Command="{Binding SubjectFrame}"/>
+                        </Grid>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

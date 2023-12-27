@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="Đồ_án.Components.StudentListing"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:ViewModel="clr-namespace:Đồ_án.ViewModel"
+             xmlns:local="clr-namespace:Đồ_án.Components" 
+             xmlns:dashbroad="clr-namespace:Đồ_án.ViewModel.DashBroad" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" Width="900"
+             DataContext="{StaticResource StudentListingViewModel}">
+    <Grid Background="GhostWhite">
+        <Border  
+            BorderBrush="Gray"
+            BorderThickness="1"
+            CornerRadius="10"
+            Margin="10">
+            <ListView ItemsSource="{Binding ClassList, UpdateSourceTrigger=PropertyChanged}" SelectionChanged="ListView_SelectionChanged">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn                             
+                            Width="398" 
+                            DisplayMemberBinding="{Binding Subject.NameSubject}"
+                            Header="Class name"/>
+                        <GridViewColumn
+                            Width="400"
+                            DisplayMemberBinding="{Binding IdClass}"
+                            Header="Class ID" />
+                        <GridViewColumn Width="32" >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button BorderThickness="0" Width="20" Height="20" Margin="0,0,0,0"  
+                                            Command="{Binding DataContext.RegisterClass, RelativeSource={RelativeSource AncestorType={x:Type ListView}}}"
+                                            CommandParameter="{Binding}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="\Resources\icons8_add_48px.png"/>
+                                        </Button.Background>
+                                        <Button.ToolTip>Register Class</Button.ToolTip>
+                                    </Button>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Width="30">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button BorderThickness="0" Width="20" Height="20" Margin="0,0,0,0"  
+                                            Command="{Binding DataContext.DeleteClass, RelativeSource={RelativeSource AncestorType={x:Type ListView}}}"
+                                            CommandParameter="{Binding}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="\Resources\icons8_Delete_50px_2.png"/>
+                                        </Button.Background>
+                                        <Button.ToolTip>Delete Class</Button.ToolTip>
+                                    </Button>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Border>
+    </Grid>
+</UserControl>
