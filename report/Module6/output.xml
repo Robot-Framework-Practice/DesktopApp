@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.0 on win32)" generated="20231227 21:42:13.982" rpa="false" schemaversion="4">
+<suite id="s1" name="Module6" source="E:\Work\Freelance\19521607@ms.uit.edu.vn\DesktopApp\testcase\Module6.robot">
+<test id="s1-t1" name="[Module6 -] Test &quot;Setting&quot; page" line="15">
+<kw name="Open Application" library="Main">
+<kw name="Windows Run" library="RPA.Windows">
+<arg>${AppPath}</arg>
+<tag>window</tag>
+<doc>Use Windows Run window to launch an application.</doc>
+<msg timestamp="20231227 21:42:14.233" level="INFO">Sending keys '{Win}r' to element: &lt;module 'uiautomation' from 'C:\\Users\\HIEU VY\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20231227 21:42:14.810" level="INFO">Sending keys 'C://Users/HIEU VY/OneDrive - Trường ĐH CNTT - University of Information Technology/Máy tính/Phai nồ/bin/Debug/Đồ án.exe' to element: &lt;module 'uiautomation' from 'C:\\Users\\HIEU VY\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20231227 21:42:17.180" level="INFO">Sending keys '{Enter}' to element: &lt;module 'uiautomation' from 'C:\\Users\\HIEU VY\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20231227 21:42:14.233" endtime="20231227 21:42:20.734"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231227 21:42:23.749" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231227 21:42:20.734" endtime="20231227 21:42:23.749"/>
+</kw>
+<status status="PASS" starttime="20231227 21:42:14.232" endtime="20231227 21:42:23.749"/>
+</kw>
+<kw name="Login function" library="Main">
+<kw name="Send Keys" library="RPA.Windows">
+<arg>${Usernametxb}</arg>
+<arg>admin</arg>
+<tag>action</tag>
+<tag>keyboard</tag>
+<doc>Send keys to desktop, current window or to Control element
+defined by given locator.</doc>
+<msg timestamp="20231227 21:42:23.751" level="INFO">Getting element with locator: id:focusFirstTextBox</msg>
+<msg timestamp="20231227 21:42:23.875" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CE3BD90&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:23.875" level="INFO">Locator 'id:focusFirstTextBox' produced matcher: MatchObject(locators=[('AutomationId', 'focusFirstTextBox', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:24.148" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.EditControl object at 0x0000027A3CE3B9A0&gt;, locator='id:focusFirstTextBox', name='', automation_id='focusFirstTextBox', control_type='EditControl', class_name='TextBox', left=636, right=949, top=422, bottom=454, width=313, height=32, xcenter=792, ycenter=438)</msg>
+<msg timestamp="20231227 21:42:24.149" level="INFO">Sending keys 'admin' to element: ControlType: EditControl    ClassName: TextBox    AutomationId: focusFirstTextBox    Rect: (636,422,949,454)[313x32]    Name: ''    Handle: 0x0(0)</msg>
+<status status="PASS" starttime="20231227 21:42:23.750" endtime="20231227 21:42:24.747"/>
+</kw>
+<kw name="Send Keys" library="RPA.Windows">
+<arg>${Passtxb}</arg>
+<arg>admin</arg>
+<tag>action</tag>
+<tag>keyboard</tag>
+<doc>Send keys to desktop, current window or to Control element
+defined by given locator.</doc>
+<msg timestamp="20231227 21:42:24.748" level="INFO">Getting element with locator: id:passwordBox</msg>
+<msg timestamp="20231227 21:42:24.749" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CE3BBE0&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:24.749" level="INFO">Locator 'id:passwordBox' produced matcher: MatchObject(locators=[('AutomationId', 'passwordBox', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:25.039" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.EditControl object at 0x0000027A3CE3BA30&gt;, locator='id:passwordBox', name='', automation_id='passwordBox', control_type='EditControl', class_name='PasswordBox', left=636, right=949, top=485, bottom=516, width=313, height=31, xcenter=792, ycenter=500)</msg>
+<msg timestamp="20231227 21:42:25.040" level="INFO">Sending keys 'admin' to element: ControlType: EditControl    ClassName: PasswordBox    AutomationId: passwordBox    Rect: (636,485,949,516)[313x31]    Name: ''    Handle: 0x0(0)</msg>
+<status status="PASS" starttime="20231227 21:42:24.747" endtime="20231227 21:42:25.634"/>
+</kw>
+<kw name="Click" library="RPA.Windows">
+<arg>${LoginBtn}</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<msg timestamp="20231227 21:42:25.635" level="INFO">Getting element with locator: name:LOGIN</msg>
+<msg timestamp="20231227 21:42:25.635" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CE3BA90&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:25.635" level="INFO">Locator 'name:LOGIN' produced matcher: MatchObject(locators=[('Name', 'LOGIN', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:25.946" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000027A3CE3BAC0&gt;, locator='name:LOGIN', name='LOGIN', automation_id='', control_type='ButtonControl', class_name='Button', left=710, right=835, top=595, bottom=635, width=125, height=40, xcenter=772, ycenter=615)</msg>
+<status status="PASS" starttime="20231227 21:42:25.634" endtime="20231227 21:42:26.522"/>
+</kw>
+<kw name="Wait For Window" library="Main">
+<arg>MainWindow</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${False}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231227 21:42:26.524" level="INFO">${is_opened} = False</msg>
+<status status="PASS" starttime="20231227 21:42:26.523" endtime="20231227 21:42:26.524"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${failsafe_counter}</var>
+<arg>20</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231227 21:42:26.524" level="INFO">${failsafe_counter} = 20</msg>
+<status status="PASS" starttime="20231227 21:42:26.524" endtime="20231227 21:42:26.524"/>
+</kw>
+<while condition="not ${is_opened} and ${failsafe_counter} &gt; 0">
+<iter>
+<kw name="List Windows" library="RPA.Windows">
+<var>${windows}</var>
+<tag>window</tag>
+<doc>List all window element on the system.</doc>
+<msg timestamp="20231227 21:42:27.258" level="INFO">${windows} = [{'title': 'Taskbar', 'pid': 21636, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 65718, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shell...</msg>
+<status status="PASS" starttime="20231227 21:42:26.524" endtime="20231227 21:42:27.258"/>
+</kw>
+<for flavor="IN">
+<var>${window}</var>
+<value>@{windows}</value>
+<iter>
+<var name="${window}">{'title': 'Taskbar', 'pid': 21636, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 65718, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shell_...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231227 21:42:27.258" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231227 21:42:27.258" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231227 21:42:27.258" endtime="20231227 21:42:27.258"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231227 21:42:27.259" level="INFO">Length is 0</msg>
+<msg timestamp="20231227 21:42:27.259" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231227 21:42:27.258" endtime="20231227 21:42:27.259"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231227 21:42:27.259" endtime="20231227 21:42:27.259"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231227 21:42:27.259" endtime="20231227 21:42:27.259"/>
+</break>
+<status status="NOT RUN" starttime="20231227 21:42:27.259" endtime="20231227 21:42:27.259"/>
+</branch>
+<status status="PASS" starttime="20231227 21:42:27.259" endtime="20231227 21:42:27.259"/>
+</if>
+<status status="PASS" starttime="20231227 21:42:27.258" endtime="20231227 21:42:27.259"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Accessibility Insights for Windows - Test - No selection', 'pid': 30188, 'name': 'AccessibilityInsights.exe', 'path': 'C:\\Program Files (x86)\\AccessibilityInsights\\1.1\\AccessibilityInsi...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231227 21:42:27.259" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231227 21:42:27.259" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231227 21:42:27.259" endtime="20231227 21:42:27.259"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231227 21:42:27.260" level="INFO">Length is 0</msg>
+<msg timestamp="20231227 21:42:27.260" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231227 21:42:27.259" endtime="20231227 21:42:27.260"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231227 21:42:27.260" endtime="20231227 21:42:27.260"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231227 21:42:27.260" endtime="20231227 21:42:27.260"/>
+</break>
+<status status="NOT RUN" starttime="20231227 21:42:27.260" endtime="20231227 21:42:27.260"/>
+</branch>
+<status status="PASS" starttime="20231227 21:42:27.260" endtime="20231227 21:42:27.260"/>
+</if>
+<status status="PASS" starttime="20231227 21:42:27.259" endtime="20231227 21:42:27.260"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'MainWindow', 'pid': 17156, 'name': 'Đồ án.exe', 'path': 'C:\\Users\\HIEU VY\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Máy tính\\Phai nồ\\bin\\Debug\\Đồ án.exe', 'ha...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231227 21:42:27.260" level="INFO">1 out of 1 lines matched</msg>
+<msg timestamp="20231227 21:42:27.260" level="INFO">${lines} = MainWindow</msg>
+<status status="PASS" starttime="20231227 21:42:27.260" endtime="20231227 21:42:27.260"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231227 21:42:27.260" level="INFO">Length is 10</msg>
+<msg timestamp="20231227 21:42:27.261" level="INFO">${found_matches} = 10</msg>
+<status status="PASS" starttime="20231227 21:42:27.260" endtime="20231227 21:42:27.261"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231227 21:42:27.261" level="INFO">${is_opened} = True</msg>
+<status status="PASS" starttime="20231227 21:42:27.261" endtime="20231227 21:42:27.261"/>
+</kw>
+<break>
+<status status="PASS" starttime="20231227 21:42:27.261" endtime="20231227 21:42:27.261"/>
+</break>
+<status status="PASS" starttime="20231227 21:42:27.261" endtime="20231227 21:42:27.261"/>
+</branch>
+<status status="PASS" starttime="20231227 21:42:27.261" endtime="20231227 21:42:27.261"/>
+</if>
+<status status="PASS" starttime="20231227 21:42:27.260" endtime="20231227 21:42:27.261"/>
+</iter>
+<status status="PASS" starttime="20231227 21:42:27.258" endtime="20231227 21:42:27.261"/>
+</for>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231227 21:42:27.766" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20231227 21:42:27.261" endtime="20231227 21:42:27.766"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${failsafe_counter}</var>
+<arg>${failsafe_counter}-1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231227 21:42:27.768" level="INFO">${failsafe_counter} = 19</msg>
+<status status="PASS" starttime="20231227 21:42:27.767" endtime="20231227 21:42:27.768"/>
+</kw>
+<status status="PASS" starttime="20231227 21:42:26.524" endtime="20231227 21:42:27.768"/>
+</iter>
+<status status="PASS" starttime="20231227 21:42:26.524" endtime="20231227 21:42:27.769"/>
+</while>
+<if>
+<branch type="IF" condition="${failsafe_counter} == 0">
+<kw name="Fail" library="BuiltIn">
+<arg>msg= The ${failsafe_counter} == Window was not found.</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" starttime="20231227 21:42:27.770" endtime="20231227 21:42:27.770"/>
+</kw>
+<status status="NOT RUN" starttime="20231227 21:42:27.769" endtime="20231227 21:42:27.770"/>
+</branch>
+<status status="PASS" starttime="20231227 21:42:27.769" endtime="20231227 21:42:27.770"/>
+</if>
+<status status="PASS" starttime="20231227 21:42:26.523" endtime="20231227 21:42:27.770"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231227 21:42:30.779" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231227 21:42:27.771" endtime="20231227 21:42:30.779"/>
+</kw>
+<status status="PASS" starttime="20231227 21:42:23.749" endtime="20231227 21:42:30.779"/>
+</kw>
+<kw name="Click" library="RPA.Windows">
+<arg>${SetNav}</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<msg timestamp="20231227 21:42:30.780" level="INFO">Getting element with locator: type:button name:Setting</msg>
+<msg timestamp="20231227 21:42:30.782" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CF2E1D0&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:30.782" level="INFO">Locator 'type:button name:Setting' produced matcher: MatchObject(locators=[('ControlType', 'buttonControl', 0), ('Name', 'Setting', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:31.080" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000027A3CF2C8E0&gt;, locator='type:button name:Setting', name='Setting', automation_id='btnSetting', control_type='ButtonControl', class_name='Button', left=254, right=486, top=748, bottom=817, width=232, height=69, xcenter=370, ycenter=782)</msg>
+<status status="PASS" starttime="20231227 21:42:30.780" endtime="20231227 21:42:31.648"/>
+</kw>
+<kw name="Check Element" library="Main">
+<arg>${toggleBtn}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${loading}</var>
+<arg>${TRUE}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231227 21:42:31.649" level="INFO">${loading} = True</msg>
+<status status="PASS" starttime="20231227 21:42:31.649" endtime="20231227 21:42:31.649"/>
+</kw>
+<kw name="Get Element" library="RPA.Windows">
+<var>${element}</var>
+<arg>${object}</arg>
+<arg>timeout=1</arg>
+<doc>Get a Control Windows element defined by the locator.</doc>
+<msg timestamp="20231227 21:42:31.649" level="INFO">Locator timeout set to: 1.000000</msg>
+<msg timestamp="20231227 21:42:31.650" level="INFO">Getting element with locator: id:ToggleBtn</msg>
+<msg timestamp="20231227 21:42:31.651" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CF64820&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:31.651" level="INFO">Locator 'id:ToggleBtn' produced matcher: MatchObject(locators=[('AutomationId', 'ToggleBtn', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:32.030" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000027A3C3CA8F0&gt;, locator='id:ToggleBtn', name='', automation_id='ToggleBtn', control_type='ButtonControl', class_name='Button', left=973, right=1048, top=542, bottom=579, width=75, height=37, xcenter=1010, ycenter=560)</msg>
+<msg timestamp="20231227 21:42:32.030" level="INFO">${element} = WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000027A3C3CA8F0&gt;, locator='id:ToggleBtn', name='', automation_id='ToggleBtn', control_type='ButtonControl', class_name='Button...</msg>
+<status status="PASS" starttime="20231227 21:42:31.649" endtime="20231227 21:42:32.030"/>
+</kw>
+<while condition="${loading}">
+<iter>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${element}</arg>
+<arg>Return From Keyword</arg>
+<arg>Test Passed</arg>
+<arg>Set Variable</arg>
+<arg>${loading}</arg>
+<arg>${FALSE}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Return From Keyword" library="BuiltIn">
+<arg>Test Passed</arg>
+<arg>Set Variable</arg>
+<arg>${loading}</arg>
+<arg>${FALSE}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<msg timestamp="20231227 21:42:32.030" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20231227 21:42:32.030" endtime="20231227 21:42:32.030"/>
+</kw>
+<status status="PASS" starttime="20231227 21:42:32.030" endtime="20231227 21:42:32.031"/>
+</kw>
+<status status="PASS" starttime="20231227 21:42:32.030" endtime="20231227 21:42:32.031"/>
+</iter>
+<status status="PASS" starttime="20231227 21:42:32.030" endtime="20231227 21:42:32.031"/>
+</while>
+<kw name="Log" library="BuiltIn">
+<arg>Loading failed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20231227 21:42:32.031" endtime="20231227 21:42:32.031"/>
+</kw>
+<kw name="Fail" library="BuiltIn">
+<arg>Loading failed</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" starttime="20231227 21:42:32.031" endtime="20231227 21:42:32.031"/>
+</kw>
+<status status="PASS" starttime="20231227 21:42:31.648" endtime="20231227 21:42:32.031"/>
+</kw>
+<kw name="Check Element" library="Main">
+<arg>${changeBtn}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${loading}</var>
+<arg>${TRUE}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231227 21:42:32.031" level="INFO">${loading} = True</msg>
+<status status="PASS" starttime="20231227 21:42:32.031" endtime="20231227 21:42:32.031"/>
+</kw>
+<kw name="Get Element" library="RPA.Windows">
+<var>${element}</var>
+<arg>${object}</arg>
+<arg>timeout=1</arg>
+<doc>Get a Control Windows element defined by the locator.</doc>
+<msg timestamp="20231227 21:42:32.032" level="INFO">Locator timeout set to: 1.000000</msg>
+<msg timestamp="20231227 21:42:32.032" level="INFO">Getting element with locator: type:button name:Change</msg>
+<msg timestamp="20231227 21:42:32.033" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CE3B2E0&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:32.033" level="INFO">Locator 'type:button name:Change' produced matcher: MatchObject(locators=[('ControlType', 'buttonControl', 0), ('Name', 'Change', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:32.425" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000027A3CE3B3D0&gt;, locator='type:button name:Change', name='Change', automation_id='', control_type='ButtonControl', class_name='Button', left=1461, right=1586, top=634, bottom=674, width=125, height=40, xcenter=1523, ycenter=654)</msg>
+<msg timestamp="20231227 21:42:32.425" level="INFO">${element} = WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000027A3CE3B3D0&gt;, locator='type:button name:Change', name='Change', automation_id='', control_type='ButtonControl', class_name...</msg>
+<status status="PASS" starttime="20231227 21:42:32.032" endtime="20231227 21:42:32.425"/>
+</kw>
+<while condition="${loading}">
+<iter>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${element}</arg>
+<arg>Return From Keyword</arg>
+<arg>Test Passed</arg>
+<arg>Set Variable</arg>
+<arg>${loading}</arg>
+<arg>${FALSE}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Return From Keyword" library="BuiltIn">
+<arg>Test Passed</arg>
+<arg>Set Variable</arg>
+<arg>${loading}</arg>
+<arg>${FALSE}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<msg timestamp="20231227 21:42:32.425" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20231227 21:42:32.425" endtime="20231227 21:42:32.425"/>
+</kw>
+<status status="PASS" starttime="20231227 21:42:32.425" endtime="20231227 21:42:32.425"/>
+</kw>
+<status status="PASS" starttime="20231227 21:42:32.425" endtime="20231227 21:42:32.425"/>
+</iter>
+<status status="PASS" starttime="20231227 21:42:32.425" endtime="20231227 21:42:32.425"/>
+</while>
+<kw name="Log" library="BuiltIn">
+<arg>Loading failed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20231227 21:42:32.426" endtime="20231227 21:42:32.426"/>
+</kw>
+<kw name="Fail" library="BuiltIn">
+<arg>Loading failed</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" starttime="20231227 21:42:32.426" endtime="20231227 21:42:32.426"/>
+</kw>
+<status status="PASS" starttime="20231227 21:42:32.031" endtime="20231227 21:42:32.426"/>
+</kw>
+<kw name="Get Element" library="RPA.Windows">
+<var>${Msg}</var>
+<arg>${Grid1}</arg>
+<doc>Get a Control Windows element defined by the locator.</doc>
+<msg timestamp="20231227 21:42:32.426" level="INFO">Getting element with locator: id:TxtB1</msg>
+<msg timestamp="20231227 21:42:32.428" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CF61360&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:32.428" level="INFO">Locator 'id:TxtB1' produced matcher: MatchObject(locators=[('AutomationId', 'TxtB1', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:32.747" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.TextControl object at 0x0000027A3CF612D0&gt;, locator='id:TxtB1', name='Password', automation_id='TxtB1', control_type='TextControl', class_name='TextBlock', left=586, right=721, top=262, bottom=296, width=135, height=34, xcenter=653, ycenter=279)</msg>
+<msg timestamp="20231227 21:42:32.747" level="INFO">${Msg} = WindowsElement(item=&lt;uiautomation.uiautomation.TextControl object at 0x0000027A3CF612D0&gt;, locator='id:TxtB1', name='Password', automation_id='TxtB1', control_type='TextControl', class_name='TextBlock'...</msg>
+<status status="PASS" starttime="20231227 21:42:32.426" endtime="20231227 21:42:32.747"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${Msg}</var>
+<arg>${Msg}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20231227 21:42:32.747" level="INFO">${Msg} = WindowsElement(item=&lt;uiautomation.uiautomation.TextControl object at 0x0000027A3CF612D0&gt;, locator='id:TxtB1', name='Password', automation_id='TxtB1', control_type='TextControl', class_name='TextBlock'...</msg>
+<status status="PASS" starttime="20231227 21:42:32.747" endtime="20231227 21:42:32.747"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${Msg}</arg>
+<arg>Password</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20231227 21:42:32.748" endtime="20231227 21:42:32.748"/>
+</kw>
+<kw name="Get Element" library="RPA.Windows">
+<var>${Msg}</var>
+<arg>${Grid2}</arg>
+<doc>Get a Control Windows element defined by the locator.</doc>
+<msg timestamp="20231227 21:42:32.748" level="INFO">Getting element with locator: id:TxtB2</msg>
+<msg timestamp="20231227 21:42:32.750" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CF5EC20&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:32.750" level="INFO">Locator 'id:TxtB2' produced matcher: MatchObject(locators=[('AutomationId', 'TxtB2', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:33.073" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.TextControl object at 0x0000027A3CF5E9E0&gt;, locator='id:TxtB2', name='New Password', automation_id='TxtB2', control_type='TextControl', class_name='TextBlock', left=586, right=816, top=356, bottom=390, width=230, height=34, xcenter=701, ycenter=373)</msg>
+<msg timestamp="20231227 21:42:33.073" level="INFO">${Msg} = WindowsElement(item=&lt;uiautomation.uiautomation.TextControl object at 0x0000027A3CF5E9E0&gt;, locator='id:TxtB2', name='New Password', automation_id='TxtB2', control_type='TextControl', class_name='TextBl...</msg>
+<status status="PASS" starttime="20231227 21:42:32.748" endtime="20231227 21:42:33.073"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${Msg}</var>
+<arg>${Msg}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20231227 21:42:33.074" level="INFO">${Msg} = WindowsElement(item=&lt;uiautomation.uiautomation.TextControl object at 0x0000027A3CF5E9E0&gt;, locator='id:TxtB2', name='New Password', automation_id='TxtB2', control_type='TextControl', class_name='TextBl...</msg>
+<status status="PASS" starttime="20231227 21:42:33.074" endtime="20231227 21:42:33.074"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${Msg}</arg>
+<arg>New Password</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20231227 21:42:33.074" endtime="20231227 21:42:33.074"/>
+</kw>
+<kw name="Get Element" library="RPA.Windows">
+<var>${Msg}</var>
+<arg>${Grid3}</arg>
+<doc>Get a Control Windows element defined by the locator.</doc>
+<msg timestamp="20231227 21:42:33.074" level="INFO">Getting element with locator: id:TxtB3</msg>
+<msg timestamp="20231227 21:42:33.076" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CF5E950&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:33.076" level="INFO">Locator 'id:TxtB3' produced matcher: MatchObject(locators=[('AutomationId', 'TxtB3', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:33.382" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.TextControl object at 0x0000027A3CF5E6E0&gt;, locator='id:TxtB3', name='Confirm Password Again', automation_id='TxtB3', control_type='TextControl', class_name='TextBlock', left=586, right=886, top=450, bottom=484, width=300, height=34, xcenter=736, ycenter=467)</msg>
+<msg timestamp="20231227 21:42:33.382" level="INFO">${Msg} = WindowsElement(item=&lt;uiautomation.uiautomation.TextControl object at 0x0000027A3CF5E6E0&gt;, locator='id:TxtB3', name='Confirm Password Again', automation_id='TxtB3', control_type='TextControl', class_na...</msg>
+<status status="PASS" starttime="20231227 21:42:33.074" endtime="20231227 21:42:33.382"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${Msg}</var>
+<arg>${Msg}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20231227 21:42:33.382" level="INFO">${Msg} = WindowsElement(item=&lt;uiautomation.uiautomation.TextControl object at 0x0000027A3CF5E6E0&gt;, locator='id:TxtB3', name='Confirm Password Again', automation_id='TxtB3', control_type='TextControl', class_na...</msg>
+<status status="PASS" starttime="20231227 21:42:33.382" endtime="20231227 21:42:33.382"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${Msg}</arg>
+<arg>Confirm Password Again</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20231227 21:42:33.383" endtime="20231227 21:42:33.383"/>
+</kw>
+<status status="PASS" starttime="20231227 21:42:14.232" endtime="20231227 21:42:33.383"/>
+</test>
+<test id="s1-t2" name="[Module6 -2] Test &quot;Change Password&quot; page" line="30">
+<kw name="Click" library="RPA.Windows">
+<arg>${OldPassEdt}</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<msg timestamp="20231227 21:42:33.384" level="INFO">Getting element with locator: id:Edt1</msg>
+<msg timestamp="20231227 21:42:33.386" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CF5E200&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:33.386" level="INFO">Locator 'id:Edt1' produced matcher: MatchObject(locators=[('AutomationId', 'Edt1', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:33.711" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.CustomControl object at 0x0000027A3CF5E0E0&gt;, locator='id:Edt1', name='', automation_id='Edt1', control_type='CustomControl', class_name='BindablePasswordBox', left=973, right=1348, top=257, bottom=301, width=375, height=44, xcenter=1160, ycenter=279)</msg>
+<status status="PASS" starttime="20231227 21:42:33.384" endtime="20231227 21:42:34.291"/>
+</kw>
+<kw name="Send Keys" library="RPA.Windows">
+<arg>${OldPassEdt}</arg>
+<arg>admin</arg>
+<tag>action</tag>
+<tag>keyboard</tag>
+<doc>Send keys to desktop, current window or to Control element
+defined by given locator.</doc>
+<msg timestamp="20231227 21:42:34.292" level="INFO">Getting element with locator: id:Edt1</msg>
+<msg timestamp="20231227 21:42:34.293" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CF5E020&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:34.294" level="INFO">Locator 'id:Edt1' produced matcher: MatchObject(locators=[('AutomationId', 'Edt1', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:34.613" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.CustomControl object at 0x0000027A3CF5DF30&gt;, locator='id:Edt1', name='', automation_id='Edt1', control_type='CustomControl', class_name='BindablePasswordBox', left=973, right=1348, top=257, bottom=301, width=375, height=44, xcenter=1160, ycenter=279)</msg>
+<msg timestamp="20231227 21:42:34.614" level="INFO">Sending keys 'admin' to element: ControlType: CustomControl    ClassName: BindablePasswordBox    AutomationId: Edt1    Rect: (973,257,1348,301)[375x44]    Name: ''    Handle: 0x0(0)</msg>
+<status status="PASS" starttime="20231227 21:42:34.292" endtime="20231227 21:42:35.212"/>
+</kw>
+<kw name="Click" library="RPA.Windows">
+<arg>${NewPassEdt}</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<msg timestamp="20231227 21:42:35.217" level="INFO">Getting element with locator: id:Edt2</msg>
+<msg timestamp="20231227 21:42:35.218" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CF5DF90&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:35.219" level="INFO">Locator 'id:Edt2' produced matcher: MatchObject(locators=[('AutomationId', 'Edt2', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:35.543" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.CustomControl object at 0x0000027A3CF762C0&gt;, locator='id:Edt2', name='', automation_id='Edt2', control_type='CustomControl', class_name='BindablePasswordBox', left=973, right=1348, top=351, bottom=395, width=375, height=44, xcenter=1160, ycenter=373)</msg>
+<status status="PASS" starttime="20231227 21:42:35.214" endtime="20231227 21:42:36.117"/>
+</kw>
+<kw name="Send Keys" library="RPA.Windows">
+<arg>${NewPassEdt}</arg>
+<arg>123456</arg>
+<tag>action</tag>
+<tag>keyboard</tag>
+<doc>Send keys to desktop, current window or to Control element
+defined by given locator.</doc>
+<msg timestamp="20231227 21:42:36.118" level="INFO">Getting element with locator: id:Edt2</msg>
+<msg timestamp="20231227 21:42:36.119" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CF76200&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:36.119" level="INFO">Locator 'id:Edt2' produced matcher: MatchObject(locators=[('AutomationId', 'Edt2', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:36.455" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.CustomControl object at 0x0000027A3CF76290&gt;, locator='id:Edt2', name='', automation_id='Edt2', control_type='CustomControl', class_name='BindablePasswordBox', left=973, right=1348, top=351, bottom=395, width=375, height=44, xcenter=1160, ycenter=373)</msg>
+<msg timestamp="20231227 21:42:36.456" level="INFO">Sending keys '123456' to element: ControlType: CustomControl    ClassName: BindablePasswordBox    AutomationId: Edt2    Rect: (973,351,1348,395)[375x44]    Name: ''    Handle: 0x0(0)</msg>
+<status status="PASS" starttime="20231227 21:42:36.117" endtime="20231227 21:42:37.063"/>
+</kw>
+<kw name="Click" library="RPA.Windows">
+<arg>${ConfirmPassEdt}</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<msg timestamp="20231227 21:42:37.063" level="INFO">Getting element with locator: id:Edt3</msg>
+<msg timestamp="20231227 21:42:37.065" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CF76350&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:37.065" level="INFO">Locator 'id:Edt3' produced matcher: MatchObject(locators=[('AutomationId', 'Edt3', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:37.406" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.CustomControl object at 0x0000027A3CF5E3E0&gt;, locator='id:Edt3', name='', automation_id='Edt3', control_type='CustomControl', class_name='BindablePasswordBox', left=973, right=1348, top=445, bottom=489, width=375, height=44, xcenter=1160, ycenter=467)</msg>
+<status status="PASS" starttime="20231227 21:42:37.063" endtime="20231227 21:42:37.980"/>
+</kw>
+<kw name="Send Keys" library="RPA.Windows">
+<arg>${ConfirmPassEdt}</arg>
+<arg>123456</arg>
+<tag>action</tag>
+<tag>keyboard</tag>
+<doc>Send keys to desktop, current window or to Control element
+defined by given locator.</doc>
+<msg timestamp="20231227 21:42:37.981" level="INFO">Getting element with locator: id:Edt3</msg>
+<msg timestamp="20231227 21:42:37.982" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CF5E590&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:37.983" level="INFO">Locator 'id:Edt3' produced matcher: MatchObject(locators=[('AutomationId', 'Edt3', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:38.352" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.CustomControl object at 0x0000027A3CF5E5F0&gt;, locator='id:Edt3', name='', automation_id='Edt3', control_type='CustomControl', class_name='BindablePasswordBox', left=973, right=1348, top=445, bottom=489, width=375, height=44, xcenter=1160, ycenter=467)</msg>
+<msg timestamp="20231227 21:42:38.352" level="INFO">Sending keys '123456' to element: ControlType: CustomControl    ClassName: BindablePasswordBox    AutomationId: Edt3    Rect: (973,445,1348,489)[375x44]    Name: ''    Handle: 0x0(0)</msg>
+<status status="PASS" starttime="20231227 21:42:37.981" endtime="20231227 21:42:38.955"/>
+</kw>
+<kw name="Click" library="RPA.Windows">
+<arg>${toggleBtn}</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<msg timestamp="20231227 21:42:38.959" level="INFO">Getting element with locator: id:ToggleBtn</msg>
+<msg timestamp="20231227 21:42:38.965" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CF5E2F0&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:38.965" level="INFO">Locator 'id:ToggleBtn' produced matcher: MatchObject(locators=[('AutomationId', 'ToggleBtn', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:39.343" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000027A3CF5EA10&gt;, locator='id:ToggleBtn', name='', automation_id='ToggleBtn', control_type='ButtonControl', class_name='Button', left=973, right=1048, top=542, bottom=579, width=75, height=37, xcenter=1010, ycenter=560)</msg>
+<status status="PASS" starttime="20231227 21:42:38.956" endtime="20231227 21:42:39.916"/>
+</kw>
+<kw name="Click" library="RPA.Windows">
+<arg>${changeBtn}</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<msg timestamp="20231227 21:42:39.917" level="INFO">Getting element with locator: type:button name:Change</msg>
+<msg timestamp="20231227 21:42:39.918" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CF5EA70&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:39.918" level="INFO">Locator 'type:button name:Change' produced matcher: MatchObject(locators=[('ControlType', 'buttonControl', 0), ('Name', 'Change', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:40.291" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000027A3CF5EB90&gt;, locator='type:button name:Change', name='Change', automation_id='', control_type='ButtonControl', class_name='Button', left=1461, right=1586, top=634, bottom=674, width=125, height=40, xcenter=1523, ycenter=654)</msg>
+<status status="PASS" starttime="20231227 21:42:39.917" endtime="20231227 21:42:40.869"/>
+</kw>
+<kw name="Get Text" library="RPA.Windows">
+<var>${Msg}</var>
+<arg>${popup}</arg>
+<tag>action</tag>
+<doc>Get text from Control element defined by the locator.</doc>
+<msg timestamp="20231227 21:42:40.870" level="INFO">Getting element with locator: id:65535</msg>
+<msg timestamp="20231227 21:42:40.871" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000027A3CF5EBC0&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231227 21:42:40.871" level="INFO">Locator 'id:65535' produced matcher: MatchObject(locators=[('AutomationId', '65535', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231227 21:42:41.153" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.TextControl object at 0x0000027A3CF5EBF0&gt;, locator='id:65535', name='Đổi PassWord Thành Công', automation_id='65535', control_type='TextControl', class_name='Static', left=905, right=1071, top=520, bottom=541, width=166, height=21, xcenter=988, ycenter=530)</msg>
+<msg timestamp="20231227 21:42:41.153" level="INFO">${Msg} = Đổi PassWord Thành Công</msg>
+<status status="PASS" starttime="20231227 21:42:40.869" endtime="20231227 21:42:41.153"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Msg}</arg>
+<arg>Đổi PassWord Thành Công</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20231227 21:42:41.153" endtime="20231227 21:42:41.154"/>
+</kw>
+<status status="PASS" starttime="20231227 21:42:33.383" endtime="20231227 21:42:41.154"/>
+</test>
+<status status="PASS" starttime="20231227 21:42:13.983" endtime="20231227 21:42:41.155"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Module6">Module6</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

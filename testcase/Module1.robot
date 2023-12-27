@@ -23,17 +23,17 @@ ${open}          type:text name:Open
     Check Element    ${noti}
     Check Element    ${AddBtn}
     Check Element    ${DelAllBtn}
-[Module1 -2] Test "Add notification" page
+[Module1 -2] Test "Add notification" button
     Click    ${AddBtn}
     Click    ${NextBtn}
     Click    ${ConfirmBtn}
-[Module1 -3] Test "Delete notification" page
+[Module1 -3] Test "Delete notification" button
     Open Application
     Login function
     Click    ${HomeNav}
     Click    ${AddBtn}
     Click    ${Delete}
-[Module1 -4] Test "Update notification" page   
+[Module1 -4] Test "Update notification" button   
     Click    ${HomeNav}
     Right Click    ${dataItem}
     Click    ${open}
@@ -44,5 +44,4 @@ ${open}          type:text name:Open
     Send Keys  desktop   {ENTER}
     ${Msg} =  RPA.Windows.Get Text   ${popup}
     Should Be Equal As Strings    ${Msg}    Update Notifycation Successfully
-    
     Close Application

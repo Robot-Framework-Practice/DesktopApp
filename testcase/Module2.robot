@@ -18,7 +18,7 @@ ${Delete}
     Check Element    ${DelAllBtn}
     Sleep    ${delay}
 
-[Module2 -2] Test "Add student" page
+[Module2 -2] Test "Add student" button
     Click    ${AddStuBtn}
     Click    ${CountryEdt}
     FOR    ${index}    IN RANGE    19
@@ -27,12 +27,12 @@ ${Delete}
     Send Keys    desktop    {ENTER}
     Click    ${OKBtn}
     Close Application
-[Module2 -3] Test "Delete student" page
+[Module2 -3] Test "Delete student" button
     Open Application
     Login function
     Click    ${StuNav}
     Click    ${Delete}
-[Module2 -4] Test "Update student" page
+[Module2 -4] Test "Update student" button
     Click    ${dataItem}
     Click    ${FatherName}
     FOR    ${index}    IN RANGE    22
